@@ -94,7 +94,7 @@
         box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     }
 
-    /* Card Lift */
+    /* Card Lift & Alignment */
     .card-lift {
         transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
     }
@@ -102,6 +102,16 @@
         transform: translateY(-10px);
         box-shadow: 0 20px 40px rgba(0,0,0,0.04);
     }
+
+    /* Schedule Table */
+    .schedule-row {
+        display: grid;
+        grid-template-columns: 100px 1fr auto;
+        padding: 1rem 0;
+        border-bottom: 1px solid #f1f1f1;
+        align-items: center;
+    }
+    .schedule-row:last-child { border-bottom: none; }
     
     .serif-italic { font-family: 'Instrument Serif', serif; font-style: italic; }
 </style>
@@ -121,7 +131,7 @@
             <a class="hover:text-primary transition-colors" href="#metodo">Metodo</a>
             <a class="hover:text-primary transition-colors" href="#contatti">Contatti</a>
         </div>
-        <a href="#prenota" class="bg-primary text-white px-8 py-3 rounded-full font-mono text-[10px] uppercase tracking-widest btn-premium">
+        <a href="#contatti" class="bg-primary text-white px-8 py-3 rounded-full font-mono text-[10px] uppercase tracking-widest btn-premium">
             Prenota Ora →
         </a>
     </div>
@@ -228,7 +238,56 @@
         </div>
         <div class="md:col-span-7 grid grid-cols-2 gap-6 reveal" style="transition-delay: 0.2s;">
             <img alt="Detail" class="w-full h-[400px] object-cover rounded-2xl shadow-lg card-lift" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU1RN66KqNk0DrN3nJELskDeb1v54ikCrbRJZoqBn7KKKRcFXFLRQZkddbyCsMJIlWF8x5JYnTHmVRbmVOH65izP40q5oBrJYQnB_Xl7M-WlBS7UWbRZKtfnAjmacQKaW6XAC83E5AoQFGZ8tP0MWQcnuDTPwNpQklpjYYEGN3CtpdTU1AQduAbHuq-Ih0pVTT5RwpD1bauAm9Gzx0nrUPWGRtJiHcCR71icVuRGqQJoNuomOv6F6H6MrAPIwdHTcRsrLEoyxD55c"/>
-            <img alt="Room" class="w-full h-[400px] object-cover rounded-2xl shadow-lg mt-12 card-lift" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF88IUjmUo0RXerjDSyRXw_sQ81QiSdcBMMBcakTdX2cCKQQucgQcYakuLPizhDcSWgnwv4xnuX3YntaIJvLirwt-MhKxTzcX9YvQiq-VWbgOvfVMqj-IbrfI1D0zzUiSHlVjBkRPj7nH_oS6Xw_j8GLBkc1VIk8BqpR-GuSHvbjHWXZqjGg9Ni34SFBrxjvuZOjBVAcnaypS0uYcKsiDF3HBQFpR9N2njLVrL1oTQNuixtElhm7wo12aZqkdsasFKXkX3Kh_21hQ"/>
+            <img alt="Room" class="w-full h-[400px] object-cover rounded-2xl shadow-lg card-lift" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF88IUjmUo0RXerjDSyRXw_sQ81QiSdcBMMBcakTdX2cCKQQucgQcYakuLPizhDcSWgnwv4xnuX3YntaIJvLirwt-MhKxTzcX9YvQiq-VWbgOvfVMqj-IbrfI1D0zzUiSHlVjBkRPj7nH_oS6Xw_j8GLBkc1VIk8BqpR-GuSHvbjHWXZqjGg9Ni34SFBrxjvuZOjBVAcnaypS0uYcKsiDF3HBQFpR9N2njLVrL1oTQNuixtElhm7wo12aZqkdsasFKXkX3Kh_21hQ"/>
+        </div>
+    </div>
+</section>
+
+<!-- Contact & Booking -->
+<section id="contatti" class="py-32 px-8 bg-surface-container-low border-t border-gray-100">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20">
+        <div class="reveal">
+            <h2 class="font-serif text-4xl md:text-5xl mb-12 leading-tight">Prenota il tuo <br> <span class="serif-italic text-primary">momento</span>.</h2>
+            <div class="space-y-6">
+                <div class="flex flex-col gap-1 p-6 bg-white rounded-xl shadow-sm border border-gray-50">
+                    <span class="font-mono text-[10px] uppercase text-gray-400">Telefono</span>
+                    <a href="tel:+390240768814" class="font-serif text-2xl hover:text-primary transition-colors">+39 02 4076 8814</a>
+                </div>
+                <div class="flex flex-col gap-1 p-6 bg-white rounded-xl shadow-sm border border-gray-50">
+                    <span class="font-mono text-[10px] uppercase text-gray-400">Email</span>
+                    <a href="mailto:ciao@bfmassaggi.it" class="font-serif text-2xl hover:text-primary transition-colors">ciao@bfmassaggi.it</a>
+                </div>
+                <div class="flex flex-col gap-1 p-6 bg-white rounded-xl shadow-sm border border-gray-50">
+                    <span class="font-mono text-[10px] uppercase text-gray-400">Indirizzo</span>
+                    <p class="font-serif text-2xl">Via Solari 14, Milano</p>
+                </div>
+            </div>
+        </div>
+        <div class="reveal" style="transition-delay: 0.2s;">
+            <div class="bg-white p-8 md:p-12 rounded-2xl shadow-lg border border-gray-50">
+                <h3 class="font-serif text-2xl mb-8">Orari di Studio</h3>
+                <div class="schedule">
+                    <div class="schedule-row">
+                        <span class="font-mono text-[10px] uppercase text-primary">Mar — Ven</span>
+                        <span class="font-serif">10:00 — 19:00</span>
+                    </div>
+                    <div class="schedule-row">
+                        <span class="font-mono text-[10px] uppercase text-primary">Gio</span>
+                        <span class="font-serif">10:00 — 21:00</span>
+                    </div>
+                    <div class="schedule-row">
+                        <span class="font-mono text-[10px] uppercase text-primary">Sab</span>
+                        <span class="font-serif">09:00 — 14:00</span>
+                    </div>
+                    <div class="schedule-row text-gray-400">
+                        <span class="font-mono text-[10px] uppercase">Lun & Dom</span>
+                        <span class="font-serif italic">Chiuso</span>
+                    </div>
+                </div>
+                <a href="tel:+390240768814" class="block w-full text-center mt-12 bg-primary text-white py-4 rounded-full font-mono text-[10px] uppercase tracking-widest btn-premium">
+                    Chiama per Prenotare
+                </a>
+            </div>
         </div>
     </div>
 </section>
