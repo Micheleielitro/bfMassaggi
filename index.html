@@ -315,18 +315,7 @@ button { background: none; border: none; font: inherit; color: inherit; }
   text-transform: uppercase;
 }
 
-@media (max-width: 880px) {
-  .header { 
-    grid-template-columns: auto 1fr; 
-    gap: 1rem;
-    padding: 0.8rem var(--gutter);
-  }
-  .nav { display: none; }
-  .header__time { display: none; }
-  .brand__line--soft { display: none; } /* Hide secondary logo text on mobile */
-  
-  .hero__top { display: none; } /* Hide the top meta text that overlaps on mobile */
-}
+/* Hero styling moved up or media queries moved down */
 
 /* ============ Hero ============ */
 .hero {
@@ -599,9 +588,23 @@ button { background: none; border: none; font: inherit; color: inherit; }
   .hero__aside { padding-top: 0; }
   .hero__blob { width: 90vw; height: 90vw; right: -30%; top: 30%; opacity: 0.55; }
 }
+
+/* Specific mobile fixes to avoid overlap */
+@media (max-width: 880px) {
+  .header { 
+    grid-template-columns: auto 1fr; 
+    gap: 1rem;
+    padding: 0.8rem var(--gutter);
+  }
+  .nav { display: none; }
+  .header__time { display: none; }
+  .brand__line--soft { display: none; }
+  
+  .hero__top { display: none !important; } /* Force hide to prevent any override */
+}
+
 @media (max-width: 560px) {
-  .hero__top { font-size: 0.62rem; }
-  .hero__top .right { display: none; }
+  /* .hero__top is already hidden at 880px */
 }
 
 /* ============ Marquee ============ */
