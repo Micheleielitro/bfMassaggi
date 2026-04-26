@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,400&amp;family=Manrope:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#6e604f",
+                    "surface-variant": "#e3e2e0",
+                    "secondary": "#6a5c4b",
+                    "secondary-fixed-dim": "#d6c4ae",
+                    "tertiary-container": "#77746d",
+                    "surface-container-high": "#e9e8e6",
+                    "on-secondary-fixed": "#241a0c",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#484740",
+                    "primary-container": "#66796f",
+                    "surface-dim": "#dadad8",
+                    "surface-container-highest": "#e3e2e0",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#faf9f7",
+                    "background": "#faf9f7",
+                    "inverse-primary": "#b7cbc0",
+                    "secondary-fixed": "#f3dfc9",
+                    "surface-container": "#efeeec",
+                    "on-surface-variant": "#424845",
+                    "primary-fixed": "#d3e7dc",
+                    "secondary-container": "#f0ddc6",
+                    "tertiary-fixed-dim": "#cac6be",
+                    "surface-container-low": "#f4f3f1",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#f5fff8",
+                    "outline-variant": "#c2c8c3",
+                    "surface": "#faf9f7",
+                    "on-tertiary-fixed": "#1c1c16",
+                    "on-primary-fixed": "#0e1f18",
+                    "surface-tint": "#506259",
+                    "outline": "#737874",
+                    "on-tertiary-container": "#fffbff",
+                    "on-secondary": "#ffffff",
+                    "inverse-on-surface": "#f1f1ef",
+                    "on-secondary-fixed-variant": "#514534",
+                    "inverse-surface": "#2f3130",
+                    "tertiary-fixed": "#e6e2d9",
+                    "on-surface": "#1a1c1b",
+                    "on-background": "#1a1c1b",
+                    "tertiary": "#5e5c55",
+                    "on-error-container": "#93000a",
+                    "primary-fixed-dim": "#b7cbc0",
+                    "on-primary-fixed-variant": "#394b42",
+                    "on-primary": "#ffffff",
+                    "primary": "#4e6057"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "stack-md": "16px",
+                    "unit": "8px",
+                    "section-padding": "80px",
+                    "stack-sm": "8px",
+                    "stack-lg": "32px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "label-caps": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "h3": ["Noto Serif"],
+                    "h1": ["Noto Serif"],
+                    "body-lg": ["Manrope"],
+                    "h2": ["Noto Serif"]
+            },
+            "fontSize": {
+                    "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                    "h3": ["24px", {"lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "400"}],
+                    "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                    "h2": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #F9F8F6;
+        }
+        .card-experience {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-experience:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#F9F8F6] dark:bg-slate-900 border-b border-[#E5E1D8] dark:border-slate-800">
+<div class="flex justify-between items-center h-20 px-8 md:px-12 max-w-7xl mx-auto">
+<div class="text-2xl font-serif italic text-[#7A8D83] dark:text-[#9FB0A6]">BF Massaggi</div>
+<div class="hidden md:flex items-center gap-stack-lg font-serif tracking-wide">
+<a class="text-[#7A8D83] dark:text-[#9FB0A6] border-b-2 border-[#7A8D83] pb-1 font-medium" href="#">Services</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#7A8D83] transition-colors" href="#">Benefits</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#7A8D83] transition-colors" href="#">Experience</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#7A8D83] transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-stack-lg py-unit rounded-full font-label-caps hover:opacity-80 transition-opacity duration-300 active:scale-95 transition-transform duration-200">
+                Book Now
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="pt-40 pb-20 md:pt-56 md:pb-32 px-gutter overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 text-center md:text-left">
+<h1 class="font-h1 text-h1 text-on-surface mb-stack-md leading-tight">Ritrova il tuo equilibrio interiore</h1>
+<p class="font-body-lg text-body-lg text-outline mb-stack-lg max-w-lg mx-auto md:mx-0">
+                    Sperimenta una fusione armoniosa di tecniche antiche e cura moderna. Un rifugio digitale progettato per calmare i sensi e rigenerare lo spirito.
+                </p>
+<div class="flex flex-col sm:flex-row gap-stack-md justify-center md:justify-start">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-caps hover:opacity-90 transition-all">
+                        Inizia il Viaggio
+                    </button>
+<button class="border border-outline text-outline px-10 py-4 rounded-full font-label-caps hover:bg-surface-container transition-all">
+                        Scopri i Trattamenti
+                    </button>
+</div>
+</div>
+<div class="flex-1 relative">
+<div class="w-full aspect-square bg-secondary-container rounded-full overflow-hidden shadow-xl">
+<img alt="Holistic Wellness" class="w-full h-full object-cover grayscale-[20%] opacity-90" data-alt="Close up of essential oils and smooth stones on a minimalist ivory wooden surface with soft natural sunlight and shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAokXk_IaY6b8tB8Uc_BjUl5QeA3KeBCajdDeDfwOR25YynUX2K-OVzR-EA3Wt2Okjiiq3yBeqzUkNwcMNiOZf_SWYogwISizD_pWf6EyYnxw8zj_OBfoAtAzrnw_O_wHTZnx2lmkuNeWtc68WU_HGm-X24_f-fIdZiMF_l8qKDNZb7HdFHVbF6xqGuPGXYhveDu9M3ZpDaaEJ6dVbF7dTe6wvasTcGMqSbQ_ikJYcECGwyPH5k2qgNLL9Xo2B5zCSdbyk0qRj4tXs"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-surface-bright p-8 rounded-xl shadow-lg border border-surface-container max-w-[200px]">
+<span class="font-label-caps text-primary block mb-2">PUREZZA</span>
+<p class="text-sm font-body-md text-outline italic">Materiali naturali e oli essenziali puri per un relax profondo.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Benefits Section -->
+<section class="py-section-padding bg-surface-container-low px-gutter">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-h2 text-h2 text-on-surface mb-stack-sm">I Benefici dell'Equilibrio</h2>
+<div class="w-20 h-px bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Benefit 1 -->
+<div class="group flex flex-col items-center text-center p-stack-lg bg-surface-bright rounded-xl transition-all duration-500 hover:shadow-md">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-stack-lg text-primary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-3xl" data-icon="air">air</span>
+</div>
+<h3 class="font-h3 text-h3 mb-stack-sm">Riduzione dello Stress</h3>
+<p class="font-body-md text-outline">Tecniche mirate per sciogliere le tensioni muscolari e abbassare i livelli di cortisolo nel sangue.</p>
+</div>
+<!-- Benefit 2 -->
+<div class="group flex flex-col items-center text-center p-stack-lg bg-surface-bright rounded-xl transition-all duration-500 hover:shadow-md">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-stack-lg text-primary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-3xl" data-icon="self_improvement">self_improvement</span>
+</div>
+<h3 class="font-h3 text-h3 mb-stack-sm">Benessere Fisico</h3>
+<p class="font-body-md text-outline">Migliora la circolazione e la flessibilità attraverso movimenti fluidi e pressioni terapeutiche calibrate.</p>
+</div>
+<!-- Benefit 3 -->
+<div class="group flex flex-col items-center text-center p-stack-lg bg-surface-bright rounded-xl transition-all duration-500 hover:shadow-md">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-stack-lg text-primary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-3xl" data-icon="psychology">psychology</span>
+</div>
+<h3 class="font-h3 text-h3 mb-stack-sm">Chiarezza Mentale</h3>
+<p class="font-body-md text-outline">Un momento di silenzio per riconnettersi con sé stessi e ritrovare il focus quotidiano.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Massage Phases Section -->
+<section class="py-section-padding px-gutter bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-stack-lg">
+<div class="max-w-2xl">
+<span class="font-label-caps text-primary uppercase mb-2 block">Il Percorso</span>
+<h2 class="font-h2 text-h2 text-on-surface">Le fasi della rinascita</h2>
+</div>
+<p class="font-body-md text-outline italic max-w-sm">Ogni seduta è una composizione curata, un rito che accompagna verso la pace totale.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter relative">
+<!-- Connection Line (Desktop) -->
+<div class="hidden md:block absolute top-1/4 left-0 w-full h-px bg-surface-container-highest -z-10"></div>
+<!-- Phase 1 -->
+<div class="flex flex-col gap-stack-md">
+<div class="font-serif text-6xl text-surface-container-highest mb-4">01</div>
+<div class="p-stack-lg bg-surface-bright border border-surface-container rounded-lg">
+<h4 class="font-h3 text-h3 mb-2">Consultation</h4>
+<p class="font-body-md text-outline text-sm">Un ascolto profondo dei tuoi bisogni per personalizzare ogni tocco e aroma.</p>
+</div>
+</div>
+<!-- Phase 2 -->
+<div class="flex flex-col gap-stack-md md:mt-16">
+<div class="font-serif text-6xl text-surface-container-highest mb-4">02</div>
+<div class="p-stack-lg bg-surface-bright border border-surface-container rounded-lg">
+<h4 class="font-h3 text-h3 mb-2">Preparation</h4>
+<p class="font-body-md text-outline text-sm">L'ambiente si trasforma: luci soffuse e fragranze selezionate preparano i sensi.</p>
+</div>
+</div>
+<!-- Phase 3 -->
+<div class="flex flex-col gap-stack-md">
+<div class="font-serif text-6xl text-surface-container-highest mb-4">03</div>
+<div class="p-stack-lg bg-primary text-on-primary rounded-lg shadow-xl">
+<h4 class="font-h3 text-h3 mb-2">The Massage</h4>
+<p class="text-on-primary/80 font-body-md text-sm">Il cuore dell'esperienza: una danza fluida di mani che sciolgono ogni resistenza.</p>
+</div>
+</div>
+<!-- Phase 4 -->
+<div class="flex flex-col gap-stack-md md:mt-16">
+<div class="font-serif text-6xl text-surface-container-highest mb-4">04</div>
+<div class="p-stack-lg bg-surface-bright border border-surface-container rounded-lg">
+<h4 class="font-h3 text-h3 mb-2">Awakening</h4>
+<p class="font-body-md text-outline text-sm">Un risveglio dolce accompagnato da una tisana purificante e tempo per sé.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Divider / Quote -->
+<section class="h-96 relative overflow-hidden flex items-center justify-center text-center px-gutter">
+<img alt="Serene Environment" class="absolute inset-0 w-full h-full object-cover opacity-30 -z-20" data-alt="Soft focused image of a white lotus flower floating in a bowl of clear water with green leaves around it" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDISAOAmJZzpv6tZMFXg0ScsJWNXFsRmRKAyMoayUbY1eiO7k6KhHeC5hfpHqRyL-IySMo1pYggfgtrg_dRJ2XHeUyrU5c_jXDOxSpIBEwxf3oLHygtAUl6O_k-4h-QjVNHRcPqAm56Fiyretq33DWgcyCbapMedHblXZNQsBHHxkRdc9Xb3VX_AgrDtc0pVAVnjTeIkNe1UahYKUeCIJ0befx4l0wPUEoZmE0Iunzctwn1RmJF6j5spxtCymTNGOE-toBZMg5xaVk"/>
+<div class="absolute inset-0 bg-primary/10 -z-10"></div>
+<div class="max-w-3xl">
+<blockquote class="font-h2 text-h2 text-primary italic mb-stack-md">"Il silenzio è la musica dell'anima."</blockquote>
+<cite class="font-label-caps text-on-surface-variant block">— BF Massaggi Philosophy</cite>
+</div>
+</section>
+<!-- Experience Showcase -->
+<section class="py-section-padding px-gutter">
+<div class="max-w-7xl mx-auto grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-5 flex flex-col justify-center">
+<h2 class="font-h2 text-h2 mb-stack-lg leading-snug">Esperienze curate per la tua essenza unica.</h2>
+<div class="space-y-stack-md">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="spa">spa</span>
+<div>
+<h5 class="font-bold">Oli Biologici</h5>
+<p class="text-sm text-outline">Spremiture a freddo ricche di nutrienti.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="thermostat">thermostat</span>
+<div>
+<h5 class="font-bold">Calore Terapeutico</h5>
+<p class="text-sm text-outline">Lettini riscaldati per il massimo comfort.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-7 grid grid-cols-2 gap-8 items-start">
+<img alt="Massage Detail" class="w-full h-80 object-cover rounded-xl shadow-md card-experience" data-alt="Artistic close up of warm massage oil being poured onto a smooth stone in a calm spa setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU1RN66KqNk0DrN3nJELskDeb1v54ikCrbRJZoqBn7KKKRcFXFLRQZkddbyCsMJIlWF8x5JYnTHmVRbmVOH65izP40q5oBrJYQnB_Xl7M-WlBS7UWbRZKtfnAjmacQKaW6XAC83E5AoQFGZ8tP0MWQcnuDTPwNpQklpjYYEGN3CtpdTU1AQduAbHuq-Ih0pVTT5RwpD1bauAm9Gzx0nrUPWGRtJiHcCR71icVuRGqQJoNuomOv6F6H6MrAPIwdHTcRsrLEoyxD55c"/>
+<img alt="Wellness Room" class="w-full h-80 object-cover rounded-xl shadow-md card-experience" data-alt="Interior of a minimalist spa room with large windows showing green trees, simple wooden furniture and soft linens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF88IUjmUo0RXerjDSyRXw_sQ81QiSdcBMMBcakTdX2cCKQQucgQcYakuLPizhDcSWgnwv4xnuX3YntaIJvLirwt-MhKxTzcX9YvQiq-VWbgOvfVMqj-IbrfI1D0zzUiSHlVjBkRPj7nH_oS6Xw_j8GLBkc1VIk8BqpR-GuSHvbjHWXZqjGg9Ni34SFBrxjvuZOjBVAcnaypS0uYcKsiDF3HBQFpR9N2njLVrL1oTQNuixtElhm7wo12aZqkdsasFKXkX3Kh_21hQ"/>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-16 bg-[#E5E1D8] dark:bg-slate-950 border-t border-[#D1CDC2] dark:border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-7xl mx-auto gap-8">
+<div class="flex flex-col gap-4 items-center md:items-start">
+<div class="text-lg font-serif text-[#7A8D83]">BF Massaggi</div>
+<p class="text-slate-500 dark:text-slate-400 font-serif text-sm tracking-widest uppercase text-center md:text-left">
+                    © 2024 BF Massaggi Sanctuary. Designed for quietude.
+                </p>
+</div>
+<div class="flex gap-8 font-serif text-sm tracking-widest uppercase">
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#7A8D83] transition-colors" href="#">Privacy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#7A8D83] transition-colors" href="#">Terms</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#7A8D83] transition-colors" href="#">Contact</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#7A8D83] transition-colors" href="#">Membership</a>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full border border-[#7A8D83] text-[#7A8D83] hover:bg-[#7A8D83] hover:text-white transition-all" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+<span class="material-symbols-outlined">north</span>
+</button>
+</div>
+</footer>
+</body></html>
