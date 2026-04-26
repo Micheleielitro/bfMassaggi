@@ -1,299 +1,2185 @@
 <!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BF Massaggi — Massaggi olistici e pratiche corporee. Lo studio di BF Massaggi a Milano, su appuntamento.">
+<meta name="theme-color" content="#EDE3D1">
+<title>BF Massaggi — Massaggi Olistici · Milano</title>
 
-<html lang="it"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,400&amp;family=Manrope:wght@400;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "on-error": "#ffffff",
-                    "on-tertiary": "#ffffff",
-                    "on-secondary-container": "#6e604f",
-                    "surface-variant": "#e3e2e0",
-                    "secondary": "#6a5c4b",
-                    "secondary-fixed-dim": "#d6c4ae",
-                    "tertiary-container": "#77746d",
-                    "surface-container-high": "#e9e8e6",
-                    "on-secondary-fixed": "#241a0c",
-                    "surface-container-lowest": "#ffffff",
-                    "on-tertiary-fixed-variant": "#484740",
-                    "primary-container": "#66796f",
-                    "surface-dim": "#dadad8",
-                    "surface-container-highest": "#e3e2e0",
-                    "error-container": "#ffdad6",
-                    "surface-bright": "#faf9f7",
-                    "background": "#faf9f7",
-                    "inverse-primary": "#b7cbc0",
-                    "secondary-fixed": "#f3dfc9",
-                    "surface-container": "#efeeec",
-                    "on-surface-variant": "#424845",
-                    "primary-fixed": "#d3e7dc",
-                    "secondary-container": "#f0ddc6",
-                    "tertiary-fixed-dim": "#cac6be",
-                    "surface-container-low": "#f4f3f1",
-                    "error": "#ba1a1a",
-                    "on-primary-container": "#f5fff8",
-                    "outline-variant": "#c2c8c3",
-                    "surface": "#faf9f7",
-                    "on-tertiary-fixed": "#1c1c16",
-                    "on-primary-fixed": "#0e1f18",
-                    "surface-tint": "#506259",
-                    "outline": "#737874",
-                    "on-tertiary-container": "#fffbff",
-                    "on-secondary": "#ffffff",
-                    "inverse-on-surface": "#f1f1ef",
-                    "on-secondary-fixed-variant": "#514534",
-                    "inverse-surface": "#2f3130",
-                    "tertiary-fixed": "#e6e2d9",
-                    "on-surface": "#1a1c1b",
-                    "on-background": "#1a1c1b",
-                    "tertiary": "#5e5c55",
-                    "on-error-container": "#93000a",
-                    "primary-fixed-dim": "#b7cbc0",
-                    "on-primary-fixed-variant": "#394b42",
-                    "on-primary": "#ffffff",
-                    "primary": "#4e6057"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "gutter": "24px",
-                    "stack-md": "16px",
-                    "unit": "8px",
-                    "section-padding": "80px",
-                    "stack-sm": "8px",
-                    "stack-lg": "32px",
-                    "container-max": "1200px"
-            },
-            "fontFamily": {
-                    "label-caps": ["Manrope"],
-                    "body-md": ["Manrope"],
-                    "h3": ["Noto Serif"],
-                    "h1": ["Noto Serif"],
-                    "body-lg": ["Manrope"],
-                    "h2": ["Noto Serif"]
-            },
-            "fontSize": {
-                    "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
-                    "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
-                    "h3": ["24px", {"lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "400"}],
-                    "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "400"}],
-                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
-                    "h2": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "400"}]
-            }
-          },
-        },
-      }
-    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,200..900,0..100,0..1;1,9..144,200..900,0..100,0..1&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
-        }
-        body {
-            background-color: #F9F8F6;
-        }
-        .card-experience {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card-experience:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-        }
-    </style>
+/* ====================================================================
+   BF MASSAGGI · LANDING
+   Editorial wellness — Milano · MMXXVI
+   ==================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Palette — paper, ink, clay, sage, wine */
+  --paper:        #EDE3D1;
+  --paper-2:      #E5DAC4;
+  --paper-3:      #DBCDB3;
+  --paper-warm:   #F2EBDB;
+  --ink:          #1B130E;
+  --ink-2:        #2E2117;
+  --ink-soft:     #4A3826;
+  --clay:         #B0512E;
+  --clay-soft:    #C97B5A;
+  --rose:         #DDA48A;
+  --sage:         #6F7960;
+  --wine:         #361922;
+  --wine-2:       #4A2330;
+  --gold:         #B68B4F;
+
+  --hairline:        rgba(27, 19, 14, 0.18);
+  --hairline-soft:   rgba(27, 19, 14, 0.10);
+  --hairline-strong: rgba(27, 19, 14, 0.45);
+  --hairline-light:  rgba(237, 227, 209, 0.22);
+
+  --serif: 'Fraunces', 'Times New Roman', Georgia, serif;
+  --serif-italic: 'Instrument Serif', 'Fraunces', Georgia, serif;
+  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+
+  --container: 1480px;
+  --gutter: clamp(1.25rem, 2.6vw, 2.5rem);
+
+  --ease:     cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in:  cubic-bezier(0.55, 0.06, 0.68, 0.19);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--serif);
+  font-variation-settings: "opsz" 14, "SOFT" 60, "WONK" 0;
+  font-weight: 380;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.55;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Touch devices: native cursor */
+@media (hover: hover) and (pointer: fine) {
+  body, a, button { cursor: none; }
+}
+
+::selection { background: var(--ink); color: var(--paper); }
+
+/* Paper grain — fixed overlay */
+body::after {
+  content: '';
+  position: fixed;
+  inset: -10%;
+  pointer-events: none;
+  z-index: 9000;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.06 0 0 0 0 0.05 0 0 0 0 0.04 0 0 0 0.55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.7'/></svg>");
+  opacity: 0.32;
+  mix-blend-mode: multiply;
+}
+
+/* Ambient warmth — top-right glow */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(40vmax 30vmax at 95% -5%, rgba(176, 81, 46, 0.10), transparent 70%),
+    radial-gradient(50vmax 40vmax at -10% 110%, rgba(111, 121, 96, 0.08), transparent 70%);
+}
+
+img { max-width: 100%; display: block; }
+
+/* ============ Custom cursor ============ */
+.cursor, .cursor-ring {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  top: 0; left: 0;
+  border-radius: 50%;
+  transition: width 0.35s var(--ease-out), height 0.35s var(--ease-out),
+              background 0.3s var(--ease), border-color 0.3s var(--ease),
+              opacity 0.3s var(--ease), transform 0.18s var(--ease-out);
+  will-change: transform;
+}
+.cursor {
+  width: 6px; height: 6px;
+  background: var(--ink);
+  transform: translate(-50%, -50%);
+}
+.cursor-ring {
+  width: 28px; height: 28px;
+  border: 1px solid var(--hairline-strong);
+  transform: translate(-50%, -50%);
+  transition-duration: 0.55s;
+}
+.cursor.hide, .cursor-ring.hide { opacity: 0; }
+.cursor.is-hover { width: 0; height: 0; }
+.cursor-ring.is-hover {
+  width: 64px; height: 64px;
+  border-color: var(--clay);
+  background: rgba(176, 81, 46, 0.06);
+  mix-blend-mode: multiply;
+}
+.cursor.is-dark { background: var(--paper); }
+.cursor-ring.is-dark { border-color: rgba(237, 227, 209, 0.4); }
+@media (hover: none), (pointer: coarse) {
+  .cursor, .cursor-ring { display: none; }
+}
+
+/* ============ Layout ============ */
+.container {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+a { color: inherit; text-decoration: none; }
+
+button { background: none; border: none; font: inherit; color: inherit; }
+
+/* ============ Eyebrow / mono labels ============ */
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--ink-soft);
+}
+.eyebrow .dot {
+  display: inline-block;
+  width: 6px; height: 6px;
+  background: var(--clay);
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-inline-end: 0.6em;
+  animation: pulse 2.4s var(--ease) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.45; transform: scale(0.8); }
+}
+
+/* ============ Buttons ============ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7em;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  padding: 1.05rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.5s var(--ease), border-color 0.5s var(--ease);
+  isolation: isolate;
+}
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--ink);
+  transform: translateY(101%);
+  transition: transform 0.55s var(--ease);
+  z-index: -1;
+}
+.btn:hover { color: var(--paper); border-color: var(--ink); }
+.btn:hover::before { transform: translateY(0); }
+.btn .arrow { transition: transform 0.45s var(--ease); display: inline-block; }
+.btn:hover .arrow { transform: translateX(3px); }
+
+.btn--filled {
+  color: var(--paper);
+  border-color: var(--ink);
+  background: var(--ink);
+}
+.btn--filled::before { background: var(--clay); }
+.btn--filled:hover { color: var(--paper); border-color: var(--clay); }
+
+.btn--ghost {
+  border-color: var(--hairline-strong);
+}
+
+/* ============ Header ============ */
+.header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 1.4rem var(--gutter);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 2rem;
+  transition: background 0.5s var(--ease), padding 0.5s var(--ease),
+              backdrop-filter 0.5s var(--ease), border-bottom 0.5s var(--ease);
+  border-bottom: 1px solid transparent;
+}
+.header.is-scrolled {
+  background: rgba(237, 227, 209, 0.78);
+  backdrop-filter: blur(14px) saturate(1.1);
+  -webkit-backdrop-filter: blur(14px) saturate(1.1);
+  padding: 1rem var(--gutter);
+  border-bottom-color: var(--hairline-soft);
+}
+
+.brand {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.6em;
+  align-items: center;
+}
+.brand__mark {
+  display: inline-grid;
+  place-items: center;
+  width: 26px; height: 26px;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  font-family: var(--serif);
+  font-style: italic;
+  font-variation-settings: "opsz" 30, "SOFT" 100, "WONK" 1;
+  font-weight: 400;
+  font-size: 0.95rem;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1;
+  padding-bottom: 2px;
+}
+.brand__name { display: grid; }
+.brand__line { line-height: 1.05; }
+.brand__line--soft { color: var(--ink-soft); font-size: 0.62rem; }
+
+.nav {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.nav a {
+  position: relative;
+  padding: 0.4em 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+}
+.nav a .num {
+  font-size: 0.6rem;
+  color: var(--clay);
+}
+.nav a::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 100%; height: 1px;
+  background: var(--ink);
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.55s var(--ease);
+}
+.nav a:hover::after { transform: scaleX(1); transform-origin: left center; }
+
+.header__cta { justify-self: end; display: flex; align-items: center; gap: 1rem; }
+
+.header__time {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+}
+
+@media (max-width: 880px) {
+  .header { grid-template-columns: 1fr auto; }
+  .nav { display: none; }
+  .header__time { display: none; }
+}
+
+/* ============ Hero ============ */
+.hero {
+  position: relative;
+  padding: clamp(7rem, 14vh, 11rem) var(--gutter) clamp(3rem, 8vh, 6rem);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero__inner {
+  max-width: var(--container);
+  width: 100%;
+  margin-inline: auto;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.7fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: end;
+}
+
+.hero__top {
+  position: absolute;
+  top: 0; left: var(--gutter); right: var(--gutter);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--ink-soft);
+  padding-top: 1.5rem;
+  pointer-events: none;
+}
+.hero__top span { display: inline-block; }
+.hero__top .pipe { color: var(--clay); margin: 0 1ch; }
+
+.hero__title {
+  font-family: var(--serif);
+  font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+  font-weight: 360;
+  font-size: clamp(4rem, 14vw, 14rem);
+  line-height: 0.86;
+  letter-spacing: -0.045em;
+  color: var(--ink);
+  margin-block: 0.8em 0.55em;
+  position: relative;
+}
+.hero__title .word {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding-block: 0.06em;
+}
+.hero__title .word > span {
+  display: inline-block;
+  transform: translateY(105%);
+  animation: rise 1.05s var(--ease-out) forwards;
+}
+.hero__title .word--1 > span { animation-delay: 0.25s; }
+.hero__title .word--2 > span { animation-delay: 0.42s; }
+.hero__title .word--3 > span { animation-delay: 0.59s; }
+
+.hero__title em {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-weight: 400;
+  font-variation-settings: normal;
+  letter-spacing: -0.02em;
+  color: var(--clay);
+  padding-right: 0.08em;
+}
+.hero__title .ampersand {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  color: var(--clay);
+}
+
+.hero__period {
+  display: inline-block;
+  width: 0.18em; height: 0.18em;
+  background: var(--clay);
+  border-radius: 50%;
+  vertical-align: 0.18em;
+  margin-left: 0.05em;
+  transform: scale(0);
+  animation: pop 0.6s var(--ease-out) 1.4s forwards;
+}
+
+@keyframes rise {
+  to { transform: translateY(0); }
+}
+@keyframes pop {
+  to { transform: scale(1); }
+}
+
+.hero__lede {
+  font-family: var(--serif);
+  font-variation-settings: "opsz" 28, "SOFT" 80, "WONK" 0;
+  font-weight: 380;
+  font-size: clamp(1.05rem, 1.45vw, 1.35rem);
+  line-height: 1.55;
+  color: var(--ink-2);
+  max-width: 36ch;
+  margin-block: 1.5rem 2.5rem;
+  opacity: 0;
+  animation: fade-up 1s var(--ease-out) 1s forwards;
+}
+.hero__lede em {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-variation-settings: normal;
+  color: var(--clay);
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  opacity: 0;
+  animation: fade-up 1s var(--ease-out) 1.2s forwards;
+}
+
+/* Right column: orbital info card */
+.hero__aside {
+  position: relative;
+  align-self: end;
+  padding-bottom: 2rem;
+  display: grid;
+  gap: 2rem;
+  opacity: 0;
+  animation: fade-up 1.2s var(--ease-out) 1.3s forwards;
+}
+
+.hero__quote {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-size: clamp(1.05rem, 1.4vw, 1.4rem);
+  line-height: 1.4;
+  color: var(--ink-2);
+  max-width: 28ch;
+  border-left: 1px solid var(--hairline);
+  padding-left: 1.4rem;
+  position: relative;
+}
+.hero__quote::before {
+  content: '"';
+  position: absolute;
+  left: -0.2em; top: -0.4em;
+  font-size: 4rem;
+  font-family: var(--serif-italic);
+  color: var(--clay);
+  opacity: 0.4;
+  line-height: 1;
+}
+
+.hero__meta {
+  display: grid;
+  gap: 1rem;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--ink-soft);
+  padding-block: 1.4rem;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+}
+.hero__meta-row {
+  display: grid;
+  grid-template-columns: 8ch 1fr;
+  gap: 1.4rem;
+}
+.hero__meta-row dt { color: var(--clay); }
+.hero__meta-row dd { font-family: var(--serif); font-size: 0.95rem; text-transform: none; letter-spacing: 0; color: var(--ink); font-weight: 400; }
+.hero__meta-row dd em {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  color: var(--clay);
+  font-size: 1rem;
+}
+
+/* ===== Hero blob — slow breath ===== */
+.hero__blob {
+  position: absolute;
+  z-index: 1;
+  width: 60vmin;
+  height: 60vmin;
+  top: 12%;
+  right: -8%;
+  background:
+    radial-gradient(circle at 32% 28%, var(--rose), transparent 60%),
+    radial-gradient(circle at 70% 70%, var(--clay), var(--clay-soft) 50%, var(--rose) 90%);
+  border-radius: 60% 40% 55% 45% / 55% 60% 40% 45%;
+  filter: blur(12px) saturate(0.95);
+  animation: breathe 14s ease-in-out infinite, drift 28s ease-in-out infinite;
+  opacity: 0.78;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+.hero__blob--2 {
+  width: 30vmin; height: 30vmin;
+  top: 50%; right: 32%;
+  background: radial-gradient(circle at 50% 50%, var(--sage), transparent 70%);
+  animation-duration: 18s, 22s;
+  animation-delay: -4s, -8s;
+  opacity: 0.45;
+  filter: blur(40px);
+}
+
+@keyframes breathe {
+  0%, 100% { border-radius: 60% 40% 55% 45% / 55% 60% 40% 45%; transform: scale(1); }
+  33%      { border-radius: 50% 50% 65% 35% / 40% 55% 45% 60%; transform: scale(1.04); }
+  66%      { border-radius: 45% 55% 50% 50% / 55% 45% 55% 45%; transform: scale(0.97); }
+}
+@keyframes drift {
+  0%, 100% { translate: 0 0; }
+  50%      { translate: -3vmin 4vmin; }
+}
+
+/* Hero scroll indicator */
+.hero__scroll {
+  position: absolute;
+  bottom: 2.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--ink-soft);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  opacity: 0;
+  animation: fade-up 1.2s var(--ease-out) 1.7s forwards;
+}
+.hero__scroll-line {
+  width: 1px;
+  height: 36px;
+  background: linear-gradient(to bottom, var(--ink-soft), transparent);
+  position: relative;
+  overflow: hidden;
+}
+.hero__scroll-line::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, var(--clay), transparent);
+  animation: scroll-tick 2.4s var(--ease-out) infinite;
+}
+@keyframes scroll-tick {
+  0% { transform: translateY(-100%); }
+  60%, 100% { transform: translateY(100%); }
+}
+
+@media (max-width: 980px) {
+  .hero__inner { grid-template-columns: 1fr; }
+  .hero__aside { padding-top: 0; }
+  .hero__blob { width: 90vw; height: 90vw; right: -30%; top: 30%; opacity: 0.55; }
+}
+@media (max-width: 560px) {
+  .hero__top { font-size: 0.62rem; }
+  .hero__top .right { display: none; }
+}
+
+/* ============ Marquee ============ */
+.marquee {
+  position: relative;
+  padding-block: 1.4rem;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+  overflow: hidden;
+  white-space: nowrap;
+  background: var(--paper-2);
+}
+.marquee__track {
+  display: inline-flex;
+  gap: 4rem;
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
+  color: var(--ink);
+  animation: marquee 38s linear infinite;
+  padding-left: 4rem;
+  white-space: nowrap;
+}
+.marquee__track > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4rem;
+}
+.marquee__track .star {
+  color: var(--clay);
+  font-family: var(--serif);
+  font-style: normal;
+  font-size: 0.7em;
+  vertical-align: 0.18em;
+}
+.marquee:hover .marquee__track { animation-play-state: paused; }
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+
+/* ============ Section base ============ */
+.section {
+  position: relative;
+  padding: clamp(5rem, 11vh, 9rem) var(--gutter);
+}
+.section__hd {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 2rem;
+  margin-bottom: clamp(2.5rem, 6vh, 5rem);
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid var(--hairline);
+}
+.section__num {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--clay);
+}
+.section__title {
+  font-family: var(--serif);
+  font-variation-settings: "opsz" 80, "SOFT" 100, "WONK" 1;
+  font-weight: 380;
+  font-size: clamp(2.2rem, 5vw, 4.8rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  margin-top: 0.4em;
+}
+.section__title em {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-variation-settings: normal;
+  color: var(--clay);
+}
+.section__caption {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--ink-soft);
+  text-align: right;
+  align-self: end;
+  max-width: 30ch;
+}
+@media (max-width: 720px) {
+  .section__hd { grid-template-columns: 1fr; }
+  .section__caption { text-align: left; }
+}
+
+/* ============ Metodo / Philosophy ============ */
+.method {
+  background: var(--paper);
+}
+.method__grid {
+  max-width: var(--container);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: start;
+}
+.method__shape {
+  position: relative;
+  aspect-ratio: 1 / 1.05;
+  display: grid;
+  place-items: center;
+  font-family: var(--serif-italic);
+  font-style: italic;
+}
+.method__shape svg {
+  width: 100%;
+  height: 100%;
+  animation: rotate-slow 38s linear infinite;
+}
+.method__shape-text {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-family: var(--serif-italic);
+  font-size: clamp(1.3rem, 1.8vw, 1.7rem);
+  color: var(--ink);
+  font-style: italic;
+  line-height: 1.3;
+  padding: 4rem;
+}
+.method__shape-text em {
+  color: var(--clay);
+}
+@keyframes rotate-slow {
+  to { transform: rotate(360deg); }
+}
+
+.method__copy {
+  display: grid;
+  gap: 2rem;
+}
+.method__lede {
+  font-family: var(--serif);
+  font-variation-settings: "opsz" 60, "SOFT" 80, "WONK" 1;
+  font-weight: 360;
+  font-size: clamp(1.7rem, 2.4vw, 2.4rem);
+  line-height: 1.18;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+  max-width: 30ch;
+}
+.method__lede em {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-variation-settings: normal;
+  color: var(--clay);
+}
+.method__body {
+  font-size: clamp(1rem, 1.15vw, 1.13rem);
+  line-height: 1.7;
+  color: var(--ink-2);
+  max-width: 50ch;
+}
+.method__body p + p { margin-top: 1em; }
+
+.method__principles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--hairline);
+}
+.method__principle h4 {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--clay);
+  margin-bottom: 0.7rem;
+}
+.method__principle p {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+@media (max-width: 880px) {
+  .method__grid { grid-template-columns: 1fr; }
+  .method__shape { max-width: 70vw; margin-inline: auto; }
+  .method__principles { grid-template-columns: 1fr; gap: 1.6rem; }
+}
+
+/* ============ Trattamenti ============ */
+.treatments {
+  background: var(--paper-2);
+  border-block: 1px solid var(--hairline-soft);
+}
+.treatments__list {
+  max-width: var(--container);
+  margin-inline: auto;
+  border-top: 1px solid var(--hairline);
+}
+.treatment {
+  display: grid;
+  grid-template-columns: 4rem minmax(0, 1.4fr) minmax(0, 1.4fr) auto auto;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 3rem);
+  padding-block: clamp(1.6rem, 3vh, 2.6rem);
+  border-bottom: 1px solid var(--hairline);
+  position: relative;
+  transition: background 0.5s var(--ease), padding 0.5s var(--ease);
+  overflow: hidden;
+}
+.treatment::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--paper-warm);
+  transform: translateY(101%);
+  transition: transform 0.6s var(--ease);
+  z-index: 0;
+}
+.treatment > * { position: relative; z-index: 1; }
+.treatment:hover::before { transform: translateY(0); }
+.treatment:hover { padding-inline: 1rem; }
+
+.treatment__num {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  color: var(--clay);
+}
+
+.treatment__name {
+  font-family: var(--serif);
+  font-variation-settings: "opsz" 60, "SOFT" 100, "WONK" 1;
+  font-weight: 380;
+  font-size: clamp(1.5rem, 2.4vw, 2.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  display: flex;
+  align-items: baseline;
+  gap: 0.3em;
+}
+.treatment__name em {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-variation-settings: normal;
+  color: var(--clay);
+}
+
+.treatment__desc {
+  font-family: var(--serif);
+  font-size: clamp(0.92rem, 1.05vw, 1.05rem);
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 45ch;
+}
+
+.treatment__duration {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ink-soft);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.treatment__price {
+  font-family: var(--serif);
+  font-variation-settings: "opsz" 36, "SOFT" 80, "WONK" 1;
+  font-size: clamp(1.4rem, 1.8vw, 1.7rem);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  white-space: nowrap;
+  text-align: right;
+}
+.treatment__price em {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-variation-settings: normal;
+  color: var(--clay);
+  font-size: 0.85em;
+  margin-right: 0.05em;
+}
+
+.treatments__note {
+  margin-top: 2.4rem;
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--ink-soft);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.treatments__note::before {
+  content: '';
+  width: 36px; height: 1px; background: var(--clay);
+}
+
+@media (max-width: 880px) {
+  .treatment {
+    grid-template-columns: 3rem 1fr auto;
+    grid-template-areas:
+      "num name name"
+      "num desc desc"
+      ".   dur  price";
+    column-gap: 1rem;
+    row-gap: 0.8rem;
+  }
+  .treatment__num { grid-area: num; align-self: start; padding-top: 0.5rem; }
+  .treatment__name { grid-area: name; }
+  .treatment__desc { grid-area: desc; }
+  .treatment__duration { grid-area: dur; text-align: left; }
+  .treatment__price { grid-area: price; }
+}
+
+/* ============ La Pratica / About ============ */
+.practice {
+  background: var(--paper);
+}
+.practice__grid {
+  max-width: var(--container);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+
+/* Abstract portrait composition */
+.portrait {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: 2px;
+  overflow: hidden;
+  background: linear-gradient(160deg, var(--paper-3), var(--paper-2) 60%, var(--rose) 130%);
+  box-shadow:
+    inset 0 0 0 1px var(--hairline),
+    0 30px 60px -30px rgba(27, 19, 14, 0.25);
+}
+.portrait__layer {
+  position: absolute;
+  inset: 0;
+}
+.portrait__form {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(2px);
+  mix-blend-mode: multiply;
+}
+.portrait__form--1 {
+  width: 78%; aspect-ratio: 1;
+  top: 18%; left: 11%;
+  background: radial-gradient(circle at 35% 30%, var(--rose), var(--clay-soft) 60%, transparent 78%);
+  animation: float-a 18s ease-in-out infinite;
+}
+.portrait__form--2 {
+  width: 60%; aspect-ratio: 1;
+  bottom: -8%; left: 22%;
+  background: radial-gradient(circle at 50% 50%, var(--clay), transparent 70%);
+  opacity: 0.7;
+  filter: blur(8px);
+  animation: float-b 22s ease-in-out infinite;
+}
+.portrait__form--3 {
+  width: 30%; aspect-ratio: 1;
+  top: 12%; right: 12%;
+  background: radial-gradient(circle, var(--sage), transparent 70%);
+  filter: blur(4px);
+  opacity: 0.55;
+  animation: float-c 26s ease-in-out infinite;
+}
+
+@keyframes float-a {
+  0%, 100% { translate: 0 0; }
+  50%      { translate: -4% 5%; }
+}
+@keyframes float-b {
+  0%, 100% { translate: 0 0; }
+  50%      { translate: 5% -3%; }
+}
+@keyframes float-c {
+  0%, 100% { translate: 0 0; transform: scale(1); }
+  50%      { translate: -3% 4%; transform: scale(1.08); }
+}
+
+.portrait__line {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.portrait__caption {
+  position: absolute;
+  bottom: 1.4rem;
+  left: 1.4rem;
+  right: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--ink-soft);
+  mix-blend-mode: multiply;
+}
+.portrait__caption em {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--ink);
+  font-size: 0.72rem;
+}
+
+.practice__bio { display: grid; gap: 1.4rem; padding-top: 1rem; }
+.practice__name {
+  font-family: var(--serif);
+  font-variation-settings: "opsz" 80, "SOFT" 100, "WONK" 1;
+  font-weight: 360;
+  font-size: clamp(2.4rem, 4.5vw, 4.2rem);
+  line-height: 0.95;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+}
+.practice__name em {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-variation-settings: normal;
+  color: var(--clay);
+  display: block;
+  font-size: 0.6em;
+  margin-top: 0.1em;
+}
+.practice__intro {
+  font-family: var(--serif);
+  font-variation-settings: "opsz" 36, "SOFT" 80, "WONK" 0;
+  font-size: clamp(1.05rem, 1.3vw, 1.2rem);
+  line-height: 1.65;
+  color: var(--ink-2);
+  max-width: 50ch;
+}
+.practice__body {
+  font-family: var(--serif);
+  font-size: clamp(0.95rem, 1.05vw, 1.05rem);
+  line-height: 1.7;
+  color: var(--ink-soft);
+  max-width: 52ch;
+}
+.practice__body p + p { margin-top: 0.9em; }
+.practice__body em {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  color: var(--ink);
+}
+
+.practice__creds {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.4rem;
+  margin-top: 1rem;
+  padding: 1.6rem 0;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+}
+.practice__cred dt {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--clay);
+  margin-bottom: 0.4rem;
+}
+.practice__cred dd {
+  font-family: var(--serif);
+  font-size: 1rem;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.practice__signature {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-size: 2.1rem;
+  color: var(--clay);
+  letter-spacing: -0.01em;
+  line-height: 1;
+  display: inline-block;
+  transform: rotate(-3deg);
+  padding: 0.4rem 0;
+}
+
+@media (max-width: 880px) {
+  .practice__grid { grid-template-columns: 1fr; gap: 3rem; }
+  .practice__creds { grid-template-columns: 1fr; }
+}
+
+/* ============ Voci / Testimonials — INVERTED ============ */
+.voices {
+  background: var(--wine);
+  color: var(--paper);
+  position: relative;
+  overflow: hidden;
+}
+.voices::before {
+  content: '';
+  position: absolute;
+  inset: -10%;
+  pointer-events: none;
+  background:
+    radial-gradient(40vmax 30vmax at 90% 10%, rgba(176, 81, 46, 0.25), transparent 60%),
+    radial-gradient(40vmax 30vmax at 10% 90%, rgba(221, 164, 138, 0.15), transparent 60%);
+  z-index: 0;
+}
+.voices > * { position: relative; z-index: 1; }
+.voices .section__hd { border-bottom-color: var(--hairline-light); }
+.voices .section__num { color: var(--rose); }
+.voices .section__title { color: var(--paper); }
+.voices .section__title em { color: var(--rose); }
+.voices .section__caption { color: rgba(237, 227, 209, 0.6); }
+
+.voices__rail {
+  max-width: var(--container);
+  margin-inline: auto;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(min(100%, 36rem), 1fr);
+  gap: clamp(1.4rem, 3vw, 3rem);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--gutter);
+  padding-bottom: 2rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(237, 227, 209, 0.3) transparent;
+}
+.voices__rail::-webkit-scrollbar { height: 4px; }
+.voices__rail::-webkit-scrollbar-thumb {
+  background: rgba(237, 227, 209, 0.3);
+  border-radius: 2px;
+}
+
+.voice {
+  scroll-snap-align: start;
+  padding: 2.2rem 0;
+  border-top: 1px solid var(--hairline-light);
+  display: grid;
+  gap: 1.6rem;
+  align-content: space-between;
+  min-height: 32rem;
+}
+.voice__num {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--rose);
+}
+.voice__quote {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-size: clamp(1.6rem, 2.4vw, 2.4rem);
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+  color: var(--paper);
+  text-wrap: balance;
+}
+.voice__quote::before {
+  content: '"';
+  display: inline-block;
+  margin-right: 0.05em;
+  color: var(--rose);
+}
+.voice__quote::after {
+  content: '"';
+  color: var(--rose);
+}
+.voice__by {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: rgba(237, 227, 209, 0.7);
+  padding-top: 1rem;
+  border-top: 1px solid var(--hairline-light);
+}
+.voice__by-name {
+  font-family: var(--serif);
+  font-variation-settings: "opsz" 30, "SOFT" 80, "WONK" 0;
+  font-style: normal;
+  font-size: 0.95rem;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--paper);
+}
+.voice__by-name em {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-variation-settings: normal;
+  color: var(--rose);
+  font-size: 0.85em;
+}
+
+.voices__hint {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: rgba(237, 227, 209, 0.5);
+  text-align: center;
+  margin-top: 2rem;
+}
+.voices__hint .arrow {
+  display: inline-block;
+  margin-inline: 0.6em;
+  color: var(--rose);
+}
+
+/* ============ Prenotare / Booking ============ */
+.booking {
+  background: var(--paper);
+}
+.booking__grid {
+  max-width: var(--container);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+
+.booking__lede {
+  font-family: var(--serif);
+  font-variation-settings: "opsz" 80, "SOFT" 100, "WONK" 1;
+  font-weight: 360;
+  font-size: clamp(1.8rem, 2.8vw, 2.8rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  max-width: 24ch;
+  margin-bottom: 2rem;
+}
+.booking__lede em {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-variation-settings: normal;
+  color: var(--clay);
+}
+
+.schedule {
+  display: grid;
+  gap: 0;
+  font-family: var(--serif);
+}
+.schedule__row {
+  display: grid;
+  grid-template-columns: 6rem 1fr auto;
+  align-items: baseline;
+  gap: 1rem;
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--hairline);
+  position: relative;
+  transition: padding 0.4s var(--ease);
+}
+.schedule__row:hover { padding-inline: 0.6rem; background: var(--paper-warm); }
+.schedule__row:first-child { border-top: 1px solid var(--hairline); }
+
+.schedule__day {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--clay);
+}
+.schedule__hours {
+  font-family: var(--serif);
+  font-variation-settings: "opsz" 30, "SOFT" 80, "WONK" 0;
+  font-size: 1.1rem;
+  font-weight: 380;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+.schedule__hours em {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-variation-settings: normal;
+  color: var(--ink-soft);
+}
+.schedule__status {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+}
+.schedule__status--open  { color: var(--sage); }
+.schedule__status--late  { color: var(--clay); }
+.schedule__status--off   { color: var(--ink-soft); opacity: 0.5; }
+
+.schedule__row.is-today {
+  background: var(--paper-warm);
+  padding-inline: 0.6rem;
+}
+.schedule__row.is-today .schedule__day::before {
+  content: '◉';
+  color: var(--clay);
+  margin-right: 0.4em;
+}
+
+.contact {
+  background: var(--ink);
+  color: var(--paper);
+  padding: clamp(1.8rem, 3vw, 2.6rem);
+  border-radius: 2px;
+  display: grid;
+  gap: 1.6rem;
+  position: relative;
+  overflow: hidden;
+}
+.contact::before {
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  right: -30%;
+  width: 80%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--clay), transparent 70%);
+  opacity: 0.5;
+  filter: blur(40px);
+}
+.contact > * { position: relative; }
+
+.contact__hd {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--rose);
+}
+.contact__row {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  align-items: baseline;
+  gap: 1rem;
+  padding-block: 0.9rem;
+  border-bottom: 1px solid rgba(237, 227, 209, 0.18);
+}
+.contact__row:last-child { border-bottom: none; }
+.contact__label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: rgba(237, 227, 209, 0.55);
+}
+.contact__value {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  color: var(--paper);
+}
+.contact__value a {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.contact__value a::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: -2px;
+  width: 100%; height: 1px;
+  background: var(--rose);
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.5s var(--ease);
+}
+.contact__value a:hover::after { transform: scaleX(1); transform-origin: left center; }
+
+.contact__cta {
+  margin-top: 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7em;
+  padding: 1rem 1.4rem;
+  background: var(--clay);
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  border-radius: 999px;
+  transition: background 0.4s var(--ease), transform 0.4s var(--ease);
+}
+.contact__cta:hover { background: var(--clay-soft); transform: translateX(3px); }
+.contact__cta .arrow { transition: transform 0.4s var(--ease); }
+.contact__cta:hover .arrow { transform: translateX(4px); }
+
+@media (max-width: 880px) {
+  .booking__grid { grid-template-columns: 1fr; }
+}
+
+/* ============ Footer ============ */
+.footer {
+  background: var(--ink);
+  color: var(--paper);
+  padding: clamp(3rem, 6vh, 5rem) var(--gutter) 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.footer::before {
+  content: '';
+  position: absolute;
+  inset: -10%;
+  pointer-events: none;
+  background: radial-gradient(40vmax 30vmax at 50% 100%, rgba(176, 81, 46, 0.18), transparent 60%);
+}
+.footer__inner {
+  max-width: var(--container);
+  margin-inline: auto;
+  position: relative;
+}
+.footer__display {
+  font-family: var(--serif);
+  font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+  font-weight: 320;
+  font-size: clamp(4rem, 14vw, 14rem);
+  line-height: 0.86;
+  letter-spacing: -0.04em;
+  color: var(--paper);
+  margin-bottom: 3rem;
+  word-break: break-word;
+}
+.footer__display em {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-variation-settings: normal;
+  color: var(--rose);
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding-block: 2rem;
+  border-top: 1px solid var(--hairline-light);
+  border-bottom: 1px solid var(--hairline-light);
+}
+.footer__col h5 {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--rose);
+  margin-bottom: 1rem;
+}
+.footer__col ul { list-style: none; display: grid; gap: 0.5rem; }
+.footer__col a, .footer__col li {
+  font-family: var(--serif);
+  font-size: 0.96rem;
+  color: rgba(237, 227, 209, 0.85);
+}
+.footer__col a { transition: color 0.3s var(--ease); }
+.footer__col a:hover { color: var(--rose); }
+.footer__col em {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  color: rgba(237, 227, 209, 0.6);
+}
+
+.footer__base {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: rgba(237, 227, 209, 0.55);
+}
+.footer__base a { transition: color 0.3s var(--ease); }
+.footer__base a:hover { color: var(--rose); }
+
+@media (max-width: 720px) {
+  .footer__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .footer__grid { grid-template-columns: 1fr; }
+}
+
+/* ============ Reveal animations ============ */
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity 1s var(--ease-out), transform 1s var(--ease-out); }
+.reveal.is-in { opacity: 1; transform: translateY(0); }
+.reveal--lift { transform: translateY(60px); }
+
+.reveal-stagger > * { opacity: 0; transform: translateY(20px); transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out); }
+.reveal-stagger.is-in > * { opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-in > *:nth-child(1) { transition-delay: 0.05s; }
+.reveal-stagger.is-in > *:nth-child(2) { transition-delay: 0.15s; }
+.reveal-stagger.is-in > *:nth-child(3) { transition-delay: 0.25s; }
+.reveal-stagger.is-in > *:nth-child(4) { transition-delay: 0.35s; }
+.reveal-stagger.is-in > *:nth-child(5) { transition-delay: 0.45s; }
+.reveal-stagger.is-in > *:nth-child(6) { transition-delay: 0.55s; }
+.reveal-stagger.is-in > *:nth-child(7) { transition-delay: 0.65s; }
+
+/* ============ Reduced motion ============ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .hero__title .word > span { transform: translateY(0); }
+  .hero__lede, .hero__ctas, .hero__aside, .hero__scroll { opacity: 1; }
+  .hero__period { transform: scale(1); }
+}
+
+/* ============ Focus styles ============ */
+:focus-visible {
+  outline: 2px solid var(--clay);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+</style>
 </head>
-<body class="bg-surface text-on-surface font-body-md">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#F9F8F6] dark:bg-slate-900 border-b border-[#E5E1D8] dark:border-slate-800">
-<div class="flex justify-between items-center h-20 px-8 md:px-12 max-w-7xl mx-auto">
-<div class="text-2xl font-serif italic text-[#7A8D83] dark:text-[#9FB0A6]">BF Massaggi</div>
-<div class="hidden md:flex items-center gap-stack-lg font-serif tracking-wide">
-<a class="text-[#7A8D83] dark:text-[#9FB0A6] border-b-2 border-[#7A8D83] pb-1 font-medium" href="#">Services</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-[#7A8D83] transition-colors" href="#">Benefits</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-[#7A8D83] transition-colors" href="#">Experience</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-[#7A8D83] transition-colors" href="#">Contact</a>
-</div>
-<button class="bg-primary text-on-primary px-stack-lg py-unit rounded-full font-label-caps hover:opacity-80 transition-opacity duration-300 active:scale-95 transition-transform duration-200">
-                Book Now
-            </button>
-</div>
-</nav>
-<!-- Hero Section -->
-<section class="pt-40 pb-20 md:pt-56 md:pb-32 px-gutter overflow-hidden">
-<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
-<div class="flex-1 text-center md:text-left">
-<h1 class="font-h1 text-h1 text-on-surface mb-stack-md leading-tight">Ritrova il tuo equilibrio interiore</h1>
-<p class="font-body-lg text-body-lg text-outline mb-stack-lg max-w-lg mx-auto md:mx-0">
-                    Sperimenta una fusione armoniosa di tecniche antiche e cura moderna. Un rifugio digitale progettato per calmare i sensi e rigenerare lo spirito.
-                </p>
-<div class="flex flex-col sm:flex-row gap-stack-md justify-center md:justify-start">
-<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-caps hover:opacity-90 transition-all">
-                        Inizia il Viaggio
-                    </button>
-<button class="border border-outline text-outline px-10 py-4 rounded-full font-label-caps hover:bg-surface-container transition-all">
-                        Scopri i Trattamenti
-                    </button>
-</div>
-</div>
-<div class="flex-1 relative">
-<div class="w-full aspect-square bg-secondary-container rounded-full overflow-hidden shadow-xl">
-<img alt="Holistic Wellness" class="w-full h-full object-cover grayscale-[20%] opacity-90" data-alt="Close up of essential oils and smooth stones on a minimalist ivory wooden surface with soft natural sunlight and shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAokXk_IaY6b8tB8Uc_BjUl5QeA3KeBCajdDeDfwOR25YynUX2K-OVzR-EA3Wt2Okjiiq3yBeqzUkNwcMNiOZf_SWYogwISizD_pWf6EyYnxw8zj_OBfoAtAzrnw_O_wHTZnx2lmkuNeWtc68WU_HGm-X24_f-fIdZiMF_l8qKDNZb7HdFHVbF6xqGuPGXYhveDu9M3ZpDaaEJ6dVbF7dTe6wvasTcGMqSbQ_ikJYcECGwyPH5k2qgNLL9Xo2B5zCSdbyk0qRj4tXs"/>
-</div>
-<div class="absolute -bottom-8 -left-8 bg-surface-bright p-8 rounded-xl shadow-lg border border-surface-container max-w-[200px]">
-<span class="font-label-caps text-primary block mb-2">PUREZZA</span>
-<p class="text-sm font-body-md text-outline italic">Materiali naturali e oli essenziali puri per un relax profondo.</p>
-</div>
-</div>
-</div>
+
+<body>
+
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+<!-- ============ Header ============ -->
+<header class="header" id="header">
+  <a href="#" class="brand" aria-label="BF Massaggi — torna in cima">
+    <span class="brand__mark">S</span>
+    <span class="brand__name">
+      <span class="brand__line">BF Massaggi</span>
+      <span class="brand__line brand__line--soft">Massaggi · Milano</span>
+    </span>
+  </a>
+  <nav class="nav" aria-label="Navigazione principale">
+    <a href="#metodo"><span class="num">01</span> Metodo</a>
+    <a href="#trattamenti"><span class="num">02</span> Trattamenti</a>
+    <a href="#pratica"><span class="num">03</span> Pratica</a>
+    <a href="#voci"><span class="num">04</span> Voci</a>
+  </nav>
+  <div class="header__cta">
+    <span class="header__time" id="clock">— · —</span>
+    <a href="#prenotare" class="btn btn--filled" data-cursor="hover">
+      <span>Prenota</span>
+      <span class="arrow" aria-hidden="true">→</span>
+    </a>
+  </div>
+</header>
+
+<!-- ============ Hero ============ -->
+<section class="hero" id="top">
+  <div class="hero__top">
+    <span><span class="eyebrow"><span class="dot"></span>Su appuntamento &nbsp;·&nbsp; Milano &nbsp;·&nbsp; MMXXVI</span></span>
+    <span class="right"><span class="eyebrow" id="open-status">Aperto oggi · 10:00 — 19:00</span></span>
+  </div>
+
+  <div class="hero__blob" aria-hidden="true"></div>
+  <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    <div class="hero__main">
+      <h1 class="hero__title">
+        <span class="word word--1"><span>Tornare</span></span>
+        <span class="word word--2"><span><em>al</em>&nbsp;respiro<span class="hero__period" aria-hidden="true"></span></span></span>
+      </h1>
+      <p class="hero__lede">
+        BF Massaggi è la pratica di BF Massaggi. Massaggi olistici, ayurvedici e rilassanti — in uno studio di legno, luce e <em>silenzio</em> nel cuore di Milano.
+      </p>
+      <div class="hero__ctas">
+        <a href="#prenotare" class="btn btn--filled" data-cursor="hover">
+          <span>Prenota un trattamento</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="#metodo" class="btn btn--ghost" data-cursor="hover">
+          <span>Scopri il metodo</span>
+          <span class="arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </div>
+
+    <aside class="hero__aside">
+      <p class="hero__quote">
+        Il corpo non chiede di essere aggiustato. Chiede di essere ascoltato.
+      </p>
+      <dl class="hero__meta">
+        <div class="hero__meta-row">
+          <dt>Studio</dt>
+          <dd>Via Solari 14, <em>Milano</em></dd>
+        </div>
+        <div class="hero__meta-row">
+          <dt>Pratica</dt>
+          <dd>Olistico · Ayurveda · Shiatsu</dd>
+        </div>
+        <div class="hero__meta-row">
+          <dt>Da</dt>
+          <dd>MMXI <em>—</em> oggi</dd>
+        </div>
+      </dl>
+    </aside>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <span>Scorri</span>
+    <span class="hero__scroll-line"></span>
+  </div>
 </section>
-<!-- Benefits Section -->
-<section class="py-section-padding bg-surface-container-low px-gutter">
-<div class="max-w-7xl mx-auto">
-<div class="text-center mb-16">
-<h2 class="font-h2 text-h2 text-on-surface mb-stack-sm">I Benefici dell'Equilibrio</h2>
-<div class="w-20 h-px bg-primary mx-auto"></div>
+
+<!-- ============ Marquee ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>
+      Olistico <span class="star">✦</span>
+      Rilassante <span class="star">✦</span>
+      Ayurvedico <span class="star">✦</span>
+      Linfodrenante <span class="star">✦</span>
+      Decontratturante <span class="star">✦</span>
+      Riflessologia <span class="star">✦</span>
+      Shiatsu <span class="star">✦</span>
+      Donna in attesa <span class="star">✦</span>
+    </span>
+    <span>
+      Olistico <span class="star">✦</span>
+      Rilassante <span class="star">✦</span>
+      Ayurvedico <span class="star">✦</span>
+      Linfodrenante <span class="star">✦</span>
+      Decontratturante <span class="star">✦</span>
+      Riflessologia <span class="star">✦</span>
+      Shiatsu <span class="star">✦</span>
+      Donna in attesa <span class="star">✦</span>
+    </span>
+  </div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-<!-- Benefit 1 -->
-<div class="group flex flex-col items-center text-center p-stack-lg bg-surface-bright rounded-xl transition-all duration-500 hover:shadow-md">
-<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-stack-lg text-primary transition-transform group-hover:scale-110">
-<span class="material-symbols-outlined text-3xl" data-icon="air">air</span>
-</div>
-<h3 class="font-h3 text-h3 mb-stack-sm">Riduzione dello Stress</h3>
-<p class="font-body-md text-outline">Tecniche mirate per sciogliere le tensioni muscolari e abbassare i livelli di cortisolo nel sangue.</p>
-</div>
-<!-- Benefit 2 -->
-<div class="group flex flex-col items-center text-center p-stack-lg bg-surface-bright rounded-xl transition-all duration-500 hover:shadow-md">
-<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-stack-lg text-primary transition-transform group-hover:scale-110">
-<span class="material-symbols-outlined text-3xl" data-icon="self_improvement">self_improvement</span>
-</div>
-<h3 class="font-h3 text-h3 mb-stack-sm">Benessere Fisico</h3>
-<p class="font-body-md text-outline">Migliora la circolazione e la flessibilità attraverso movimenti fluidi e pressioni terapeutiche calibrate.</p>
-</div>
-<!-- Benefit 3 -->
-<div class="group flex flex-col items-center text-center p-stack-lg bg-surface-bright rounded-xl transition-all duration-500 hover:shadow-md">
-<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-stack-lg text-primary transition-transform group-hover:scale-110">
-<span class="material-symbols-outlined text-3xl" data-icon="psychology">psychology</span>
-</div>
-<h3 class="font-h3 text-h3 mb-stack-sm">Chiarezza Mentale</h3>
-<p class="font-body-md text-outline">Un momento di silenzio per riconnettersi con sé stessi e ritrovare il focus quotidiano.</p>
-</div>
-</div>
-</div>
+
+<!-- ============ Metodo ============ -->
+<section class="section method" id="metodo">
+  <header class="section__hd reveal">
+    <div>
+      <span class="section__num">01 / Il Metodo</span>
+      <h2 class="section__title">Il corpo<br>conosce. <em>Lo si</em><br>ascolta.</h2>
+    </div>
+    <p class="section__caption">Una pratica che intreccia tecniche occidentali, tradizione ayurvedica e ascolto somatico</p>
+  </header>
+
+  <div class="method__grid">
+    <div class="method__shape reveal">
+      <svg viewBox="0 0 400 400" aria-hidden="true">
+        <defs>
+          <path id="curveTop" d="M 200,200 m -160,0 a 160,160 0 1,1 320,0 a 160,160 0 1,1 -320,0" />
+        </defs>
+        <circle cx="200" cy="200" r="170" fill="none" stroke="rgba(27,19,14,0.18)" stroke-width="0.6"/>
+        <circle cx="200" cy="200" r="155" fill="none" stroke="rgba(176,81,46,0.4)" stroke-width="0.4" stroke-dasharray="2 6"/>
+        <text font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="6" fill="#1B130E" text-transform="uppercase">
+          <textPath href="#curveTop" startOffset="0">
+            ASCOLTO  ·  PRESENZA  ·  CURA  ·  RESPIRO  ·  LENTEZZA  ·  ASCOLTO  ·  PRESENZA  ·  CURA  ·  RESPIRO  ·  LENTEZZA  ·
+          </textPath>
+        </text>
+      </svg>
+      <div class="method__shape-text">
+        Un'ora<br>per <em>tornare</em><br>al respiro.
+      </div>
+    </div>
+
+    <div class="method__copy reveal">
+      <p class="method__lede">
+        Ogni corpo è una storia. Ogni mano una <em>domanda</em>. Il mio lavoro inizia dove finisce la fretta.
+      </p>
+      <div class="method__body">
+        <p>Il massaggio olistico non aggiusta, accompagna. Non risolve, restituisce. La pressione, il ritmo, la pausa: tutto è scelto in base a ciò che il corpo, in quel momento, sa raccontare. È una pratica antica e quotidiana insieme — un'ora di silenzio dichiarato in cui la testa rallenta e la pelle si ricorda di essere viva.</p>
+        <p>Lavoro con tecniche integrate — manualità rilassanti, ayurveda, riflessologia, shiatsu — scegliendo ogni volta la lingua più giusta per quel preciso giorno, quel preciso corpo, quel preciso respiro.</p>
+      </div>
+
+      <div class="method__principles">
+        <div class="method__principle">
+          <h4>I.</h4>
+          <p>Il tempo dilatato. Niente sequenze meccaniche, niente fretta. La mano segue il respiro.</p>
+        </div>
+        <div class="method__principle">
+          <h4>II.</h4>
+          <p>Lo studio come soglia. Un piccolo rifugio di legno e luce, lontano dal rumore di fuori.</p>
+        </div>
+        <div class="method__principle">
+          <h4>III.</h4>
+          <p>Il silenzio che cura. Parlare poco, sentire molto. Quello che resta è il corpo che ricorda.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Massage Phases Section -->
-<section class="py-section-padding px-gutter bg-surface">
-<div class="max-w-7xl mx-auto">
-<div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-stack-lg">
-<div class="max-w-2xl">
-<span class="font-label-caps text-primary uppercase mb-2 block">Il Percorso</span>
-<h2 class="font-h2 text-h2 text-on-surface">Le fasi della rinascita</h2>
-</div>
-<p class="font-body-md text-outline italic max-w-sm">Ogni seduta è una composizione curata, un rito che accompagna verso la pace totale.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter relative">
-<!-- Connection Line (Desktop) -->
-<div class="hidden md:block absolute top-1/4 left-0 w-full h-px bg-surface-container-highest -z-10"></div>
-<!-- Phase 1 -->
-<div class="flex flex-col gap-stack-md">
-<div class="font-serif text-6xl text-surface-container-highest mb-4">01</div>
-<div class="p-stack-lg bg-surface-bright border border-surface-container rounded-lg">
-<h4 class="font-h3 text-h3 mb-2">Consultation</h4>
-<p class="font-body-md text-outline text-sm">Un ascolto profondo dei tuoi bisogni per personalizzare ogni tocco e aroma.</p>
-</div>
-</div>
-<!-- Phase 2 -->
-<div class="flex flex-col gap-stack-md md:mt-16">
-<div class="font-serif text-6xl text-surface-container-highest mb-4">02</div>
-<div class="p-stack-lg bg-surface-bright border border-surface-container rounded-lg">
-<h4 class="font-h3 text-h3 mb-2">Preparation</h4>
-<p class="font-body-md text-outline text-sm">L'ambiente si trasforma: luci soffuse e fragranze selezionate preparano i sensi.</p>
-</div>
-</div>
-<!-- Phase 3 -->
-<div class="flex flex-col gap-stack-md">
-<div class="font-serif text-6xl text-surface-container-highest mb-4">03</div>
-<div class="p-stack-lg bg-primary text-on-primary rounded-lg shadow-xl">
-<h4 class="font-h3 text-h3 mb-2">The Massage</h4>
-<p class="text-on-primary/80 font-body-md text-sm">Il cuore dell'esperienza: una danza fluida di mani che sciolgono ogni resistenza.</p>
-</div>
-</div>
-<!-- Phase 4 -->
-<div class="flex flex-col gap-stack-md md:mt-16">
-<div class="font-serif text-6xl text-surface-container-highest mb-4">04</div>
-<div class="p-stack-lg bg-surface-bright border border-surface-container rounded-lg">
-<h4 class="font-h3 text-h3 mb-2">Awakening</h4>
-<p class="font-body-md text-outline text-sm">Un risveglio dolce accompagnato da una tisana purificante e tempo per sé.</p>
-</div>
-</div>
-</div>
-</div>
+
+<!-- ============ Trattamenti ============ -->
+<section class="section treatments" id="trattamenti">
+  <header class="section__hd reveal">
+    <div>
+      <span class="section__num">02 / I Trattamenti</span>
+      <h2 class="section__title">Sei modi<br>di <em>tornare</em>.</h2>
+    </div>
+    <p class="section__caption">Ogni trattamento è preceduto da una breve conversazione per scegliere insieme la pratica più giusta</p>
+  </header>
+
+  <ul class="treatments__list reveal-stagger">
+    <li class="treatment" data-cursor="hover">
+      <span class="treatment__num">01</span>
+      <h3 class="treatment__name">Massaggio <em>olistico</em></h3>
+      <p class="treatment__desc">Un'integrazione di tecniche che ascolta il corpo come un tutto. Ideale per chi cerca riequilibrio profondo.</p>
+      <span class="treatment__duration">90 min</span>
+      <span class="treatment__price"><em>€</em>110</span>
+    </li>
+    <li class="treatment" data-cursor="hover">
+      <span class="treatment__num">02</span>
+      <h3 class="treatment__name">Massaggio <em>rilassante</em></h3>
+      <p class="treatment__desc">Manualità lenta e continua per allentare tensione e stress. Una pausa di sessanta minuti, dichiarata al corpo.</p>
+      <span class="treatment__duration">60 min</span>
+      <span class="treatment__price"><em>€</em>75</span>
+    </li>
+    <li class="treatment" data-cursor="hover">
+      <span class="treatment__num">03</span>
+      <h3 class="treatment__name">Decontratturante</h3>
+      <p class="treatment__desc">Lavoro mirato su zone di tensione cronica, contratture, postura. Pressioni decise, intenzione precisa.</p>
+      <span class="treatment__duration">60 min</span>
+      <span class="treatment__price"><em>€</em>85</span>
+    </li>
+    <li class="treatment" data-cursor="hover">
+      <span class="treatment__num">04</span>
+      <h3 class="treatment__name">Massaggio <em>ayurvedico</em></h3>
+      <p class="treatment__desc">Pratica antica con oli caldi medicati. Manualità ritmiche per riequilibrare mente, corpo e energia vitale.</p>
+      <span class="treatment__duration">75 min</span>
+      <span class="treatment__price"><em>€</em>95</span>
+    </li>
+    <li class="treatment" data-cursor="hover">
+      <span class="treatment__num">05</span>
+      <h3 class="treatment__name">Linfodrenaggio manuale</h3>
+      <p class="treatment__desc">Tocco delicato, ritmo costante. Stimola la circolazione linfatica e dona leggerezza.</p>
+      <span class="treatment__duration">60 min</span>
+      <span class="treatment__price"><em>€</em>80</span>
+    </li>
+    <li class="treatment" data-cursor="hover">
+      <span class="treatment__num">06</span>
+      <h3 class="treatment__name">Riflessologia <em>plantare</em></h3>
+      <p class="treatment__desc">Pressioni sui punti riflessi del piede. Una mappa antica del corpo, attraversata con cura.</p>
+      <span class="treatment__duration">45 min</span>
+      <span class="treatment__price"><em>€</em>60</span>
+    </li>
+  </ul>
+
+  <p class="treatments__note reveal">
+    Per pacchetti di più sedute, percorsi mirati o sessioni a domicilio, scrivimi — costruiamo qualcosa che ti somigli.
+  </p>
 </section>
-<!-- Visual Divider / Quote -->
-<section class="h-96 relative overflow-hidden flex items-center justify-center text-center px-gutter">
-<img alt="Serene Environment" class="absolute inset-0 w-full h-full object-cover opacity-30 -z-20" data-alt="Soft focused image of a white lotus flower floating in a bowl of clear water with green leaves around it" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDISAOAmJZzpv6tZMFXg0ScsJWNXFsRmRKAyMoayUbY1eiO7k6KhHeC5hfpHqRyL-IySMo1pYggfgtrg_dRJ2XHeUyrU5c_jXDOxSpIBEwxf3oLHygtAUl6O_k-4h-QjVNHRcPqAm56Fiyretq33DWgcyCbapMedHblXZNQsBHHxkRdc9Xb3VX_AgrDtc0pVAVnjTeIkNe1UahYKUeCIJ0befx4l0wPUEoZmE0Iunzctwn1RmJF6j5spxtCymTNGOE-toBZMg5xaVk"/>
-<div class="absolute inset-0 bg-primary/10 -z-10"></div>
-<div class="max-w-3xl">
-<blockquote class="font-h2 text-h2 text-primary italic mb-stack-md">"Il silenzio è la musica dell'anima."</blockquote>
-<cite class="font-label-caps text-on-surface-variant block">— BF Massaggi Philosophy</cite>
-</div>
+
+<!-- ============ Pratica ============ -->
+<section class="section practice" id="pratica">
+  <header class="section__hd reveal">
+    <div>
+      <span class="section__num">03 / La Pratica</span>
+      <h2 class="section__title">Quindici anni<br><em>al servizio</em><br>del corpo.</h2>
+    </div>
+    <p class="section__caption">Un piccolo studio in zona Solari, fatto di legno chiaro, luce calda e tempo dilatato</p>
+  </header>
+
+  <div class="practice__grid">
+    <figure class="portrait reveal reveal--lift" role="img" aria-label="Ritratto astratto di BF Massaggi">
+      <div class="portrait__layer">
+        <div class="portrait__form portrait__form--1"></div>
+        <div class="portrait__form portrait__form--2"></div>
+        <div class="portrait__form portrait__form--3"></div>
+      </div>
+      <svg class="portrait__line" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1B130E" stop-opacity="0.6"/>
+            <stop offset="100%" stop-color="#B0512E" stop-opacity="0.5"/>
+          </linearGradient>
+        </defs>
+        <!-- Hand-drawn organic figure -->
+        <path d="M 130,80 C 100,110 95,160 130,180 C 145,189 175,189 195,180 C 230,164 235,115 210,85 C 185,60 155,60 130,80 Z"
+              fill="none" stroke="url(#lineGrad)" stroke-width="0.8" opacity="0.6"/>
+        <path d="M 80,200 C 110,210 130,240 150,270 C 170,310 190,335 220,340 C 260,348 290,330 310,290"
+              fill="none" stroke="url(#lineGrad)" stroke-width="0.8" opacity="0.45"/>
+        <path d="M 60,330 C 110,360 175,380 240,370 C 290,362 330,340 360,310"
+              fill="none" stroke="url(#lineGrad)" stroke-width="0.8" opacity="0.35"/>
+        <path d="M 200,200 C 250,220 280,260 280,300"
+              fill="none" stroke="url(#lineGrad)" stroke-width="0.6" opacity="0.4"/>
+        <circle cx="170" cy="130" r="2" fill="#B0512E" opacity="0.7"/>
+        <circle cx="200" cy="135" r="2" fill="#B0512E" opacity="0.5"/>
+      </svg>
+      <figcaption class="portrait__caption">
+        <span>Ritratto · MMXXVI</span>
+        <em>Marta, in studio</em>
+      </figcaption>
+    </figure>
+
+    <div class="practice__bio reveal">
+      <h3 class="practice__name">
+        BF Massaggi
+        <em>massaggiatrice olistica</em>
+      </h3>
+      <p class="practice__intro">
+        Mi formo a Bologna nei primi anni Duemila, tra una scuola di shiatsu e un pomeriggio di domande sui libri di anatomia. Da allora, il mio lavoro è stato un lento mestiere d'ascolto.
+      </p>
+      <div class="practice__body">
+        <p>Ho studiato in India, in un centro di medicina ayurvedica, e a Berlino, dove ho imparato che il silenzio è una tecnica come un'altra. Ho lavorato in spa, in studi medici e in istituti di riabilitazione. <em>Poi ho aperto il mio studio</em>, perché il tempo che il corpo chiede non è quello dei listini.</p>
+        <p>Oggi ricevo a Milano, in via Solari, su appuntamento. Lavoro principalmente da sola — un trattamento alla volta, con pause vere tra l'uno e l'altro — perché la qualità di un'ora dipende dalla qualità dell'ora che la precede.</p>
+      </div>
+
+      <dl class="practice__creds">
+        <div class="practice__cred">
+          <dt>Formazione</dt>
+          <dd>Scuola Shiatsu Bologna · Diploma Ayurveda Trivandrum · IST. Naturopatia Milano</dd>
+        </div>
+        <div class="practice__cred">
+          <dt>Esperienza</dt>
+          <dd>Quindici anni di pratica · Oltre 4.000 trattamenti · Studio aperto dal 2019</dd>
+        </div>
+        <div class="practice__cred">
+          <dt>Lingue</dt>
+          <dd>Italiano · Inglese · Tedesco</dd>
+        </div>
+        <div class="practice__cred">
+          <dt>Studio</dt>
+          <dd>Via Solari 14 · Milano · 2° piano</dd>
+        </div>
+      </dl>
+
+      <span class="practice__signature">— Marta</span>
+    </div>
+  </div>
 </section>
-<!-- Experience Showcase -->
-<section class="py-section-padding px-gutter">
-<div class="max-w-7xl mx-auto grid grid-cols-12 gap-gutter">
-<div class="col-span-12 md:col-span-5 flex flex-col justify-center">
-<h2 class="font-h2 text-h2 mb-stack-lg leading-snug">Esperienze curate per la tua essenza unica.</h2>
-<div class="space-y-stack-md">
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary" data-icon="spa">spa</span>
-<div>
-<h5 class="font-bold">Oli Biologici</h5>
-<p class="text-sm text-outline">Spremiture a freddo ricche di nutrienti.</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary" data-icon="thermostat">thermostat</span>
-<div>
-<h5 class="font-bold">Calore Terapeutico</h5>
-<p class="text-sm text-outline">Lettini riscaldati per il massimo comfort.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-span-12 md:col-span-7 grid grid-cols-2 gap-8 items-start">
-<img alt="Massage Detail" class="w-full h-80 object-cover rounded-xl shadow-md card-experience" data-alt="Artistic close up of warm massage oil being poured onto a smooth stone in a calm spa setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU1RN66KqNk0DrN3nJELskDeb1v54ikCrbRJZoqBn7KKKRcFXFLRQZkddbyCsMJIlWF8x5JYnTHmVRbmVOH65izP40q5oBrJYQnB_Xl7M-WlBS7UWbRZKtfnAjmacQKaW6XAC83E5AoQFGZ8tP0MWQcnuDTPwNpQklpjYYEGN3CtpdTU1AQduAbHuq-Ih0pVTT5RwpD1bauAm9Gzx0nrUPWGRtJiHcCR71icVuRGqQJoNuomOv6F6H6MrAPIwdHTcRsrLEoyxD55c"/>
-<img alt="Wellness Room" class="w-full h-80 object-cover rounded-xl shadow-md card-experience" data-alt="Interior of a minimalist spa room with large windows showing green trees, simple wooden furniture and soft linens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF88IUjmUo0RXerjDSyRXw_sQ81QiSdcBMMBcakTdX2cCKQQucgQcYakuLPizhDcSWgnwv4xnuX3YntaIJvLirwt-MhKxTzcX9YvQiq-VWbgOvfVMqj-IbrfI1D0zzUiSHlVjBkRPj7nH_oS6Xw_j8GLBkc1VIk8BqpR-GuSHvbjHWXZqjGg9Ni34SFBrxjvuZOjBVAcnaypS0uYcKsiDF3HBQFpR9N2njLVrL1oTQNuixtElhm7wo12aZqkdsasFKXkX3Kh_21hQ"/>
-</div>
-</div>
+
+<!-- ============ Voci ============ -->
+<section class="section voices" id="voci">
+  <header class="section__hd reveal">
+    <div>
+      <span class="section__num">04 / Le Voci</span>
+      <h2 class="section__title">Ciò che <em>resta</em><br>dopo un'ora.</h2>
+    </div>
+    <p class="section__caption">Frammenti raccolti negli ultimi anni — citati con il consenso delle persone che li hanno scritti</p>
+  </header>
+
+  <div class="voices__rail reveal" id="voices-rail">
+    <article class="voice">
+      <span class="voice__num">— I.</span>
+      <p class="voice__quote">Sono uscita dallo studio camminando in modo diverso. Le sue mani sembravano sapere prima di me ciò di cui avevo bisogno. Da allora ci torno ogni volta che mi sento un po' troppo lontana da casa.</p>
+      <div class="voice__by">
+        <span class="voice__by-name">Chiara D. <em>· Milano</em></span>
+        <span>Olistico · 90'</span>
+      </div>
+    </article>
+    <article class="voice">
+      <span class="voice__num">— II.</span>
+      <p class="voice__quote">Da Marta vado per fermare il mondo per un'ora. È l'unica persona che conosca capace di stare in silenzio in modo davvero presente. Esci dal lettino e ti senti come dopo un giorno di mare.</p>
+      <div class="voice__by">
+        <span class="voice__by-name">Andrea P. <em>· Milano</em></span>
+        <span>Decontratturante · 60'</span>
+      </div>
+    </article>
+    <article class="voice">
+      <span class="voice__num">— III.</span>
+      <p class="voice__quote">Una delle persone più sensibili e preparate che abbia incontrato in tanti anni di trattamenti. Il suo tocco è gentile e fermo insieme — sa quando insistere e quando lasciare andare. Tornerò sicuramente.</p>
+      <div class="voice__by">
+        <span class="voice__by-name">Valentina G. <em>· Como</em></span>
+        <span>Ayurvedico · 75'</span>
+      </div>
+    </article>
+    <article class="voice">
+      <span class="voice__num">— IV.</span>
+      <p class="voice__quote">Lo studio di Marta è un piccolo rifugio. Si sale al secondo piano, si tolgono le scarpe, e il rumore della città resta in strada. Si esce più leggeri, più presenti, più sé stessi. Una specie di magia ordinaria.</p>
+      <div class="voice__by">
+        <span class="voice__by-name">Sara M. <em>· Milano</em></span>
+        <span>Rilassante · 60'</span>
+      </div>
+    </article>
+  </div>
+
+  <p class="voices__hint" aria-hidden="true">Trascina <span class="arrow">⟶</span> o usa la rotella per scorrere</p>
 </section>
-<!-- Footer -->
-<footer class="w-full py-16 bg-[#E5E1D8] dark:bg-slate-950 border-t border-[#D1CDC2] dark:border-slate-800">
-<div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-7xl mx-auto gap-8">
-<div class="flex flex-col gap-4 items-center md:items-start">
-<div class="text-lg font-serif text-[#7A8D83]">BF Massaggi</div>
-<p class="text-slate-500 dark:text-slate-400 font-serif text-sm tracking-widest uppercase text-center md:text-left">
-                    © 2024 BF Massaggi Sanctuary. Designed for quietude.
-                </p>
-</div>
-<div class="flex gap-8 font-serif text-sm tracking-widest uppercase">
-<a class="text-slate-500 dark:text-slate-400 hover:text-[#7A8D83] transition-colors" href="#">Privacy</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-[#7A8D83] transition-colors" href="#">Terms</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-[#7A8D83] transition-colors" href="#">Contact</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-[#7A8D83] transition-colors" href="#">Membership</a>
-</div>
-<button class="w-10 h-10 flex items-center justify-center rounded-full border border-[#7A8D83] text-[#7A8D83] hover:bg-[#7A8D83] hover:text-white transition-all" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-<span class="material-symbols-outlined">north</span>
-</button>
-</div>
+
+<!-- ============ Prenotare ============ -->
+<section class="section booking" id="prenotare">
+  <header class="section__hd reveal">
+    <div>
+      <span class="section__num">05 / Prenotare</span>
+      <h2 class="section__title">Su <em>appuntamento.</em><br>Sempre.</h2>
+    </div>
+    <p class="section__caption">Lo studio è aperto da martedì a sabato. Risponderò entro la giornata — di solito molto prima.</p>
+  </header>
+
+  <div class="booking__grid">
+    <div class="reveal">
+      <p class="booking__lede">
+        Scrivimi due righe sul tuo momento, sul corpo, su ciò che cerchi — <em>scegliamo insieme</em> il trattamento e l'orario più giusto.
+      </p>
+      <div class="schedule" id="schedule" role="list">
+        <div class="schedule__row" role="listitem" data-day="1">
+          <span class="schedule__day">Lun</span>
+          <span class="schedule__hours">— <em>chiuso</em></span>
+          <span class="schedule__status schedule__status--off">Off</span>
+        </div>
+        <div class="schedule__row" role="listitem" data-day="2">
+          <span class="schedule__day">Mar</span>
+          <span class="schedule__hours">10:00 <em>—</em> 19:00</span>
+          <span class="schedule__status schedule__status--open">Aperto</span>
+        </div>
+        <div class="schedule__row" role="listitem" data-day="3">
+          <span class="schedule__day">Mer</span>
+          <span class="schedule__hours">10:00 <em>—</em> 19:00</span>
+          <span class="schedule__status schedule__status--open">Aperto</span>
+        </div>
+        <div class="schedule__row" role="listitem" data-day="4">
+          <span class="schedule__day">Gio</span>
+          <span class="schedule__hours">10:00 <em>—</em> 21:00</span>
+          <span class="schedule__status schedule__status--late">Sera</span>
+        </div>
+        <div class="schedule__row" role="listitem" data-day="5">
+          <span class="schedule__day">Ven</span>
+          <span class="schedule__hours">10:00 <em>—</em> 19:00</span>
+          <span class="schedule__status schedule__status--open">Aperto</span>
+        </div>
+        <div class="schedule__row" role="listitem" data-day="6">
+          <span class="schedule__day">Sab</span>
+          <span class="schedule__hours">09:00 <em>—</em> 14:00</span>
+          <span class="schedule__status schedule__status--open">Mattina</span>
+        </div>
+        <div class="schedule__row" role="listitem" data-day="0">
+          <span class="schedule__day">Dom</span>
+          <span class="schedule__hours">— <em>chiuso</em></span>
+          <span class="schedule__status schedule__status--off">Off</span>
+        </div>
+      </div>
+    </div>
+
+    <aside class="contact reveal">
+      <span class="contact__hd"><span class="eyebrow"><span class="dot"></span>BF Massaggi · Milano</span></span>
+      <div>
+        <div class="contact__row">
+          <span class="contact__label">Telefono</span>
+          <span class="contact__value"><a href="tel:+390240768814" data-cursor="hover">+39 02 4076 8814</a></span>
+        </div>
+        <div class="contact__row">
+          <span class="contact__label">Email</span>
+          <span class="contact__value"><a href="mailto:ciao@bfmassaggi.it" data-cursor="hover">ciao@bfmassaggi.it</a></span>
+        </div>
+        <div class="contact__row">
+          <span class="contact__label">Studio</span>
+          <span class="contact__value">Via Solari 14, 20144 Milano</span>
+        </div>
+        <div class="contact__row">
+          <span class="contact__label">Instagram</span>
+          <span class="contact__value"><a href="#" data-cursor="hover">@bfmassaggi</a></span>
+        </div>
+        <div class="contact__row">
+          <span class="contact__label">Whatsapp</span>
+          <span class="contact__value"><a href="#" data-cursor="hover">Scrivimi su WhatsApp</a></span>
+        </div>
+      </div>
+      <a href="mailto:ciao@bfmassaggi.it" class="contact__cta" data-cursor="hover">
+        <span>Scrivimi due righe</span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <p class="footer__display">Tornare <em>al</em><br>respiro<em>.</em></p>
+
+    <div class="footer__grid">
+      <div class="footer__col">
+        <h5>Studio</h5>
+        <ul>
+          <li>Via Solari 14</li>
+          <li>20144 Milano</li>
+          <li><em>2° piano · interno 4</em></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Contatti</h5>
+        <ul>
+          <li><a href="tel:+390240768814">+39 02 4076 8814</a></li>
+          <li><a href="mailto:ciao@bfmassaggi.it">ciao@bfmassaggi.it</a></li>
+          <li><a href="#">@bfmassaggi</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Pratica</h5>
+        <ul>
+          <li><a href="#trattamenti">Trattamenti</a></li>
+          <li><a href="#metodo">Il metodo</a></li>
+          <li><a href="#pratica">BF Massaggi</a></li>
+          <li><a href="#prenotare">Prenotare</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Orari</h5>
+        <ul>
+          <li>Mar — Ven · 10–19</li>
+          <li>Gio · 10–21</li>
+          <li>Sab · 9–14</li>
+          <li><em>Lun & Dom · chiuso</em></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__base">
+      <span>© MMXXVI BF Massaggi — BF Massaggi</span>
+      <span>P. IVA 12345678901 · <a href="#">Privacy</a> · <a href="#">Cookie</a></span>
+      <span>Made in <em style="font-family: var(--serif-italic); text-transform: none; letter-spacing: 0;">Milano</em></span>
+    </div>
+  </div>
 </footer>
-</body></html>
+
+<script>
+(() => {
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  /* ============ Custom cursor ============ */
+  if (fine) {
+    const cur = document.getElementById('cursor');
+    const ring = document.getElementById('cursor-ring');
+    let x = window.innerWidth / 2, y = window.innerHeight / 2;
+    let rx = x, ry = y;
+
+    document.addEventListener('mousemove', (e) => {
+      x = e.clientX; y = e.clientY;
+      cur.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
+    }, { passive: true });
+
+    document.addEventListener('mouseleave', () => {
+      cur.classList.add('hide'); ring.classList.add('hide');
+    });
+    document.addEventListener('mouseenter', () => {
+      cur.classList.remove('hide'); ring.classList.remove('hide');
+    });
+
+    // Smooth ring follower
+    const tick = () => {
+      rx += (x - rx) * 0.16;
+      ry += (y - ry) * 0.16;
+      ring.style.transform = `translate(${rx}px, ${ry}px) translate(-50%, -50%)`;
+      requestAnimationFrame(tick);
+    };
+    tick();
+
+    // Hover detection
+    const hoverables = document.querySelectorAll('a, button, [data-cursor="hover"], .treatment, input, textarea, .voice');
+    hoverables.forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cur.classList.add('is-hover');
+        ring.classList.add('is-hover');
+      });
+      el.addEventListener('mouseleave', () => {
+        cur.classList.remove('is-hover');
+        ring.classList.remove('is-hover');
+      });
+    });
+
+    // Dark sections
+    const darkSections = document.querySelectorAll('.voices, .footer, .contact');
+    const darkObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting && e.intersectionRatio > 0.5) {
+          cur.classList.add('is-dark');
+          ring.classList.add('is-dark');
+        } else if (!entries.some(x => x.isIntersecting && x.intersectionRatio > 0.5)) {
+          cur.classList.remove('is-dark');
+          ring.classList.remove('is-dark');
+        }
+      });
+    }, { threshold: [0.1, 0.5, 0.9] });
+    darkSections.forEach(s => darkObs.observe(s));
+  }
+
+  /* ============ Header scroll state ============ */
+  const header = document.getElementById('header');
+  const onScroll = () => {
+    header.classList.toggle('is-scrolled', window.scrollY > 80);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ============ Reveal on scroll ============ */
+  if (!reduced) {
+    const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => el.classList.add('is-in'));
+  }
+
+  /* ============ Clock + open status ============ */
+  const fmt = (n) => String(n).padStart(2, '0');
+  const giorni = ['DOM', 'LUN', 'MAR', 'MER', 'GIO', 'VEN', 'SAB'];
+  const updateClock = () => {
+    const d = new Date();
+    const day = giorni[d.getDay()];
+    const time = `${fmt(d.getHours())}:${fmt(d.getMinutes())}`;
+    const tz = 'CET';
+    const clock = document.getElementById('clock');
+    if (clock) clock.textContent = `${day} · ${time} · ${tz}`;
+
+    const status = document.getElementById('open-status');
+    if (status) {
+      const dow = d.getDay();
+      const hr = d.getHours() + d.getMinutes() / 60;
+      const schedules = {
+        2: { open: 10, close: 19, label: 'Aperto oggi · 10:00 — 19:00' },
+        3: { open: 10, close: 19, label: 'Aperto oggi · 10:00 — 19:00' },
+        4: { open: 10, close: 21, label: 'Aperto oggi · 10:00 — 21:00' },
+        5: { open: 10, close: 19, label: 'Aperto oggi · 10:00 — 19:00' },
+        6: { open: 9, close: 14, label: 'Aperto oggi · 09:00 — 14:00' }
+      };
+      const s = schedules[dow];
+      if (s && hr >= s.open && hr < s.close) {
+        status.textContent = s.label;
+      } else if (s) {
+        status.textContent = `Oggi · 10:00 chiude alle ${s.close}:00 · ora chiuso`;
+      } else {
+        status.textContent = `Oggi chiuso · martedì 10:00 — 19:00`;
+      }
+    }
+  };
+  updateClock();
+  setInterval(updateClock, 30 * 1000);
+
+  /* ============ Highlight today in schedule ============ */
+  const today = new Date().getDay();
+  document.querySelectorAll('.schedule__row').forEach(row => {
+    if (parseInt(row.dataset.day, 10) === today) row.classList.add('is-today');
+  });
+
+  /* ============ Voices rail — drag scroll ============ */
+  const rail = document.getElementById('voices-rail');
+  if (rail && fine) {
+    let down = false, startX = 0, scrollLeft = 0;
+    rail.addEventListener('mousedown', (e) => {
+      down = true;
+      startX = e.pageX - rail.offsetLeft;
+      scrollLeft = rail.scrollLeft;
+      rail.style.cursor = 'grabbing';
+    });
+    document.addEventListener('mouseup', () => { down = false; rail.style.cursor = ''; });
+    rail.addEventListener('mouseleave', () => { down = false; });
+    rail.addEventListener('mousemove', (e) => {
+      if (!down) return;
+      e.preventDefault();
+      const x = e.pageX - rail.offsetLeft;
+      rail.scrollLeft = scrollLeft - (x - startX) * 1.4;
+    });
+    // Wheel: horizontal scroll on the rail
+    rail.addEventListener('wheel', (e) => {
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+        rail.scrollLeft += e.deltaY;
+        e.preventDefault();
+      }
+    }, { passive: false });
+  }
+
+  /* ============ Page load class ============ */
+  document.documentElement.classList.add('is-loaded');
+})();
+</script>
+
+</body>
+</html>
