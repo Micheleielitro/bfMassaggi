@@ -46,7 +46,7 @@
   --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
 
   --container: 1480px;
-  --gutter: clamp(1.25rem, 2.6vw, 2.5rem);
+  --gutter: clamp(1.5rem, 5vw, 2.5rem);
 
   --ease:     cubic-bezier(0.65, 0, 0.35, 1);
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
@@ -316,15 +316,21 @@ button { background: none; border: none; font: inherit; color: inherit; }
 }
 
 @media (max-width: 880px) {
-  .header { grid-template-columns: 1fr auto; }
+  .header { 
+    grid-template-columns: 1fr auto; 
+    gap: 1rem;
+    padding-inline: var(--gutter);
+  }
   .nav { display: none; }
   .header__time { display: none; }
+  .brand__line--soft { display: none; } /* Hide secondary logo text on mobile */
 }
 
 /* ============ Hero ============ */
 .hero {
   border-top: none;
   padding-block: clamp(3rem, 10vh, 5rem);
+  padding-inline: var(--gutter);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
