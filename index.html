@@ -317,13 +317,15 @@ button { background: none; border: none; font: inherit; color: inherit; }
 
 @media (max-width: 880px) {
   .header { 
-    grid-template-columns: 1fr auto; 
+    grid-template-columns: auto 1fr; 
     gap: 1rem;
-    padding-inline: var(--gutter);
+    padding: 0.8rem var(--gutter);
   }
   .nav { display: none; }
   .header__time { display: none; }
   .brand__line--soft { display: none; } /* Hide secondary logo text on mobile */
+  
+  .hero__top { display: none; } /* Hide the top meta text that overlaps on mobile */
 }
 
 /* ============ Hero ============ */
